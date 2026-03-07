@@ -18,3 +18,7 @@ nav_order: 2
 {% bibliography %}
 
 </div>
+
+<div class="footnote" style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--global-divider-color); font-size: 0.875rem; color: var(--global-text-color-light);">
+  <p><em>Note: Some earlier publications may appear under the name Michael J. Moran.</em></p>
+</div>
