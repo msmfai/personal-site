@@ -49,10 +49,9 @@ cv:
         end_date: present
         summary: Boutique AI consultancy specializing in scientific AI systems and safety architecture for frontier AI labs, AI training data platforms, and AI-native companies
         highlights:
-          - "Scientific AI Training: Lead design and delivery of PhD-level verification datasets for frontier AI models. Coordinated 100+ domain experts across physics, chemistry, and drug discovery; personally authored substantial volume of expert-level challenges. Delivered datasets now powering model capability evaluation at scale"
+          - "Scientific AI Training: Lead design and delivery of PhD-level verification datasets for frontier AI models. Coordinated 100+ domain experts across physics, chemistry, and drug discovery; personally authored substantial volume of expert-level challenges. Delivered datasets now powering frontier model capabilities"
           - "AI Safety & Ethics Advisory: Provide strategic guidance on AI alignment and responsible deployment to frontier AI organizations. Translated philosophical and technical safety literature into actionable frameworks for production systems"
-          - "Verifiable AI Systems: Design verification frameworks for scientific domains where accuracy is non-negotiable and ground truth is complex. Address the foundational challenge of making AI outputs verifiable in domains requiring deep expertise—creating rigorous evaluation criteria that bridge computational outputs with scientific validity"
-          - "Unique Value: Rare combination of PhD-level scientific expertise (physics, chemistry, materials science), frontier AI research experience, and philosophical depth—enabling bridge between technical capability and responsible deployment"
+          - "Verifiable AI Systems: Design verification frameworks for scientific domains where expertise is implicit and evaluation extends beyond binary correctness. Advise on constructing benchmarks that test whether models learn to do science, not just memorize it"
 
       - company: Electronic Arts
         position: Physics Software Engineer (Internship)
