@@ -1,8 +1,6 @@
 cv:
   name: Dr. Marin Moran
   label: AI Research Scientist
-  email: mm04926412@gmail.com
-  phone: "07952651809"
   location: Liverpool, UK
   image: ""
   summary: Multi-disciplinary AI researcher with 6+ years of experience in AI. My T-shaped expertise spans scaling distributed, multi-GPU training pipelines, developing real-time AI for AAA game engines, and advancing representation learning in materials science. I have delivered consultancy ranging from organising large scale scientific RLVR data collection efforts from domain experts and designing reinforcement learning systems around that data for frontier labs, to ethics seminars grounded in philosophy and alignment literature. While I am dedicated to delivering high-quality results, I also strive to maintain an energetic, person-driven, and approachable demeanour in all things. There is no such thing as a stupid question and I want everyone on the team to feel included, valued, and heard.
@@ -22,12 +20,12 @@ cv:
         end_date: present
         summary: Leading real-time generative AI and LLM research for AAA games
         highlights:
-          - Engineered device optimised real-time generative neural networks, deployed to millions of players, reduced asset memory footprints by 99%, register pressure by 95%, and ALU costs by 20% compared to the original system while improving visual quality
-          - Project lead in usage of LLMs in a real time context, taking full ownership of research, development and implementation of novel architectures, fine-tuning methods, and harnesses
-          - Led pioneering research into what provably stable dynamic game and narrative design can look like with the use of LLMs and generative AI – full ownership from conceptualisation to prototype
-          - Solved long standing fundamental mathematical problems in sparse rendering leveraging my materials science background
-          - Authored companywide strategy for LLM design in designable, completable, stable video games
-          - Pioneer in enabling creative agency in AI assisted artistic workflows
+          - Developed novel neural network architectures for real-time generative systems, demonstrating order-of-magnitude improvements over existing methods (99% memory reduction, 95% register pressure reduction, 20% ALU cost reduction) while improving output quality
+          - Technical lead for LLM integration in real-time interactive systems, driving architecture design, fine-tuning methodologies, and evaluation frameworks across research and production teams
+          - Led cross-functional research into dynamic content generation systems that maintain game design integrity and player agency, with full ownership from conceptualization to prototype
+          - Solved fundamental rendering challenges by applying physics and materials science domain expertise to production constraints
+          - Authored and drove adoption of technical strategy for LLM integration in stable, completable game experiences, leading principals and senior staff
+          - Established novel workflows enabling creative agency in AI-assisted content pipelines
 
       - company: University of Liverpool, Materials Innovation Factory
         position: Post-Graduate Machine Learning Researcher
@@ -58,11 +56,11 @@ cv:
         location: Guildford, UK
         start_date: 2023-09
         end_date: 2024-03
-        summary: Memory optimization and legacy code modernization for physics engine
+        summary: Memory optimization and legacy code modernization for physics systems
         highlights:
-          - Achieved significant memory optimizations, reducing the memory requirements of a critical legacy application by several gigabytes by rewriting the core data architecture, approximately 50% for most workloads (C++, C++/CLI, C#)
-          - Incorporated in app documentation promoting accessibility for people without scientific backgrounds to interface with the physics engine
-          - Created a "fuzzy regex" neurosymbolic pipeline for automatically upgrading legacy code with AI in an interpretable, reliable and reproducible fashion (python, GPT 3.5 era)
+          - Achieved significant memory optimizations through core data architecture redesign, reducing memory requirements by approximately 50% for typical workloads (C++, C++/CLI, C#)
+          - Developed in-app documentation improving accessibility of physics engine for non-specialist users
+          - Created AI-assisted code modernization pipeline for legacy codebase maintenance using neurosymbolic approaches (Python, GPT-3.5 era)
 
     Education:
       - institution: University of Liverpool
@@ -168,27 +166,9 @@ cv:
           - Peer Review
           - Grant Writing
 
-    Leadership:
-      - organization: University of Liverpool RPG Society
-        position: Elected President
-        start_date: 2015
-        end_date: 2019
-        highlights:
-          - Managed 50-100 members for 4 years
-          - Expanded the society and made lasting connections with local businesses
-
-      - organization: University of Liverpool
-        position: Python Teaching Demonstrator
-        start_date: 2019
-        end_date: 2022
-        highlights:
-          - Taught Python to undergraduate physicists for 3 years
-          - Received positive feedback for being attentive and empathetic when demonstrating best practice for physical simulations in Python and MATLAB
-
     Interests:
-      - Dungeons and dragons game master & community organiser
-      - Classical singing (Baritone to Soprano) & throat singing
-      - Developing NES and retro video games (6502 assembly)
-      - Philosophy with focus on AI ethics, alignment, and the social impact of technology
-      - Short story author focusing on the social impact of technology
-      - Amateur quant with interest in scale invariant fractal behaviour of markets and social network-based modelling
+      - Tabletop RPG design and community coordination
+      - Vocal performance (classical and extended techniques)
+      - Retro game development (6502 assembly for NES)
+      - AI alignment, ethics, and philosophy of technology
+      - Quantitative analysis of market microstructure and network dynamics
