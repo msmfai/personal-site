@@ -39,6 +39,12 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Timeline -->
+    {% if page.timeline and page.timeline.enabled %}
+      <h2>timeline</h2>
+      {% include timeline.liquid limit=page.timeline.limit %}
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>

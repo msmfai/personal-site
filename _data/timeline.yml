@@ -1,0 +1,37 @@
+# Timeline entries (automatically sorted in reverse chronological order)
+
+- date: "October 2024"
+  content: |
+    Joined Electronic Arts SEED as AI, Physics, and Rendering Research Scientist. Leading real-time generative AI and LLM research for AAA games.
+
+- date: "September 2024"
+  content: |
+    Completed PhD in Deep Learning for Materials Science at University of Liverpool. Published 4 papers in top-tier journals including Digital Discovery, npj Computational Materials, and Angewandte Chemie.
+
+- date: "February 2024"
+  content: |
+    Founded Solomonoff Consultancy, providing AI safety and scientific AI consulting to frontier AI labs and AI-native companies.
+
+- date: "2023"
+  content: |
+    Published Site-Net architecture in Digital Discovery—novel transformer architecture combining global self-attention with crystallographic symmetry constraints for materials science.
+
+- date: "September 2023"
+  content: |
+    Started internship at Electronic Arts as Physics Software Engineer. Achieved 50% memory reduction through core data architecture redesign.
+
+- date: "2021"
+  content: |
+    First experimental validation of ML-guided materials discovery published in Angewandte Chemie. Synthesized and characterized predicted compound, confirming computational predictions.
+
+- date: "October 2019"
+  content: |
+    Started PhD at University of Liverpool, Materials Innovation Factory, focusing on novel transformer architectures and representation learning for materials science.
+
+- date: "May 2019"
+  content: |
+    Graduated with Integrated Masters in Physics (First Class Honours) from University of Liverpool, with focus on computational physics and machine learning applications.
+
+- date: "2018-2019"
+  content: |
+    Final year of my Integrated Masters—particle physics project with CERN, but couldn't stop reading ML papers. Years of linearizing quantum systems into vector spaces made a lecturer's offhand comment—"anything is a vector in the right basis"—resonate. Seeing attention mechanisms as learned graph structures over vector embeddings felt like watching symbolic and subsymbolic AI start to converge. Applied for ML PhDs instead of continuing in physics.
