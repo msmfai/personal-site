@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(nul)",
-      "Bash(docker compose:*)"
+      "Bash(docker compose:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)"
     ],
     "deny": [],
     "ask": []
