@@ -87,7 +87,7 @@ cv:
           - Focus on computational physics and machine learning applications
 
     Skills:
-      - label: Programming & Languages
+      - label: Languages & Frameworks
         keywords:
           - Python
           - C++
@@ -95,14 +95,7 @@ cv:
           - C#
           - Java
           - CUDA
-          - HLSL
-          - GLSL
           - JavaScript
-          - C++/CLI
-          - 6502 Assembly
-
-      - label: AI/ML Frameworks & Tools
-        keywords:
           - PyTorch (Lightning)
           - TensorFlow/Keras
           - JAX
@@ -110,13 +103,14 @@ cv:
           - PyTorch Geometric
           - Hugging Face
           - DeepSpeed
-          - ONNX
           - NumPy
           - Pandas
-          - Matplotlib
+          - SciPy
           - Ray
+          - XGBoost
+          - ONNX
 
-      - label: AI/ML Domains & Specializations
+      - label: AI/ML Specializations
         keywords:
           - Large Language Models
           - Transformer Architectures
@@ -134,14 +128,16 @@ cv:
           - HPC (SLURM)
           - Distributed Training
           - GPU Compute (CUDA Kernels)
+          - OpenMP
+          - Graphics Programming (HLSL, GLSL)
           - Real-time Physics Simulation
-          - Graphics Programming
-          - Docker
-          - MLOps
           - Game Engines (Unreal, Frostbite, Unity)
+          - Docker
+          - Singularity
+          - MLOps
+          - Azure
           - Full Stack Development
           - Agentic Systems
-          - Git
           - MongoDB
           - SQLite
           - HDF5
@@ -149,11 +145,28 @@ cv:
       - label: Domain Expertise
         keywords:
           - Materials Science
+          - DFT (Density Functional Theory)
+          - Molecular Dynamics
+          - Crystallography
+          - VASP
+          - ASE (Atomic Simulation Environment)
           - Frontier AI Safety
           - Scientific AI Verification
           - Real-time Game AI
           - Physics Simulation
           - Computational Chemistry
+          - Low-level Systems (6502 Assembly, C++/CLI)
+
+      - label: Game Development
+        keywords:
+          - Blueprint (Unreal)
+          - Unity (C#)
+          - Perforce
+
+      - label: Research & Communication
+        keywords:
+          - Peer Review
+          - Grant Writing
 
     Leadership:
       - organization: University of Liverpool RPG Society
