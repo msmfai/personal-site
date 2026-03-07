@@ -1,5 +1,6 @@
 {% comment %}
   Unified skills entry renderer for both formats
+  Supports both RenderCV format (label/keywords) and JSONResume format (name/keywords)
 {% endcomment %}
 
 <div class="card-text font-weight-light">
@@ -8,18 +9,36 @@
       {% if entry.icon %}
         <i class="{{ entry.icon }}"></i>
       {% endif %}
-      <strong>
-        {{- entry.name -}}
-        {%- if entry.level %} ({{ entry.level }}){% endif %}:</strong
-      >
-      {% if entry.keywords %}
-        {% for keyword in entry.keywords %}
-          {% if forloop.last %}
-            {{ keyword }}
-          {% else %}
-            {{ keyword }},
-          {% endif %}
-        {% endfor %}
+
+      {% if entry.label %}
+        {%- comment -%} RenderCV format with category labels {%- endcomment -%}
+        <h5 class="skill-category">{{ entry.label }}</h5>
+        {% if entry.keywords %}
+          <div class="skill-keywords">
+            {% for keyword in entry.keywords %}
+              {% if forloop.last %}
+                {{ keyword }}
+              {% else %}
+                {{ keyword }},
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% elsif entry.name %}
+        {%- comment -%} JSONResume format {%- endcomment -%}
+        <strong>
+          {{- entry.name -}}
+          {%- if entry.level %} ({{ entry.level }}){% endif %}:</strong
+        >
+        {% if entry.keywords %}
+          {% for keyword in entry.keywords %}
+            {% if forloop.last %}
+              {{ keyword }}
+            {% else %}
+              {{ keyword }},
+            {% endif %}
+          {% endfor %}
+        {% endif %}
       {% endif %}
     </div>
   {% endfor %}
@@ -27,6 +46,19 @@
 
 <style>
   .skill-item {
-    padding: 0.5rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .skill-category {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    color: var(--global-text-color);
+  }
+
+  .skill-keywords {
+    margin-left: 0;
+    line-height: 1.6;
   }
 </style>
