@@ -87,59 +87,73 @@ cv:
           - Focus on computational physics and machine learning applications
 
     Skills:
-      - label: Programming Languages
+      - label: Programming & Languages
         keywords:
-          - Python (Fluent)
-          - C++ (Proficient)
-          - C# (Proficient)
-          - C++/CLI (Proficient)
-          - MATLAB (Fluent)
-          - Java (Proficient)
-          - HLSL (Proficient)
-          - CUDA (Proficient)
-          - GLSL (Proficient)
-          - Javascript (Proficient)
-          - 6502 assembly (Fluent)
+          - Python
+          - C++
+          - MATLAB
+          - C#
+          - Java
+          - CUDA
+          - HLSL
+          - GLSL
+          - JavaScript
+          - C++/CLI
+          - 6502 Assembly
 
-      - label: ML Tech Stack
+      - label: AI/ML Frameworks & Tools
         keywords:
           - PyTorch (Lightning)
-          - Keras / TensorFlow
+          - TensorFlow/Keras
+          - JAX
           - Scikit-learn
+          - PyTorch Geometric
+          - Hugging Face
+          - DeepSpeed
+          - ONNX
           - NumPy
           - Pandas
           - Matplotlib
+          - Ray
+
+      - label: AI/ML Domains & Specializations
+        keywords:
+          - Large Language Models
+          - Transformer Architectures
+          - Deep Learning
+          - Representation Learning
+          - Generative AI (Diffusion Models, VAEs, GANs)
+          - Graph Neural Networks
+          - Geometric Deep Learning
+          - Contrastive Learning
+          - Neural NLP
+          - Computer Vision
+
+      - label: Systems & Infrastructure
+        keywords:
+          - HPC (SLURM)
+          - Distributed Training
+          - GPU Compute (CUDA Kernels)
+          - Real-time Physics Simulation
+          - Graphics Programming
+          - Docker
+          - MLOps
+          - Game Engines (Unreal, Frostbite, Unity)
+          - Full Stack Development
+          - Agentic Systems
+          - Git
           - MongoDB
           - SQLite
-          - Ray
-          - JAX
-          - ONNX
-          - Git
+          - HDF5
 
-      - label: ML Domains
+      - label: Domain Expertise
         keywords:
-          - Deep learning
-          - Representation learning
-          - Generative AI
-          - Transformers
-          - Graph neural networks
-          - Contrastive learning
-          - Variational autoencoders
-          - Diffusion models
-          - GAN architectures
-          - Geometric learning
-          - Neural NLP
-
-      - label: Software Engineering
-        keywords:
-          - Real-time physics simulation
-          - GPU compute
-          - CUDA kernel programming
-          - Graphics programming
-          - Distributed ML
-          - Containerised development
-          - Agentic systems
-          - Full stack development
+          - Materials Science
+          - Frontier AI Safety
+          - Scientific AI Verification
+          - Real-time Game AI
+          - Physics Simulation
+          - Computational Chemistry
 
     Leadership:
       - organization: University of Liverpool RPG Society
