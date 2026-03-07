@@ -47,12 +47,12 @@ cv:
         location: Remote
         start_date: 2024-02
         end_date: present
-        summary: AI ethics consulting and scientific AI training for frontier labs
+        summary: Boutique AI consultancy specializing in scientific AI systems and safety architecture for frontier AI labs, AI training data platforms, and AI-native companies
         highlights:
-          - "AI Ethics Consultant: Applied self-taught background in philosophy and ethics to create practical workshops on safer, kinder AI backed by appropriate technical and philosophical literature"
-          - "Scientific AI Trainer & Project Lead (Pareto, June 2024–Present): Led project on delivery of PhD level datasets for verifying scientific capabilities of AI, coordinating 100+ experts while creating considerable amounts of PhD level scientific challenges"
-          - Provided consultancy in robust usage of LLMs and AI to achieve organisational goals by building interpretable robust pipelines founded in statistical theory
-          - Received excellent feedback for creating actionable, counter-intuitive and accessible content
+          - "Scientific AI Training: Lead design and delivery of PhD-level verification datasets for frontier AI models. Coordinated 100+ domain experts across physics, chemistry, and drug discovery; personally authored substantial volume of expert-level challenges. Delivered datasets now powering model capability evaluation at scale"
+          - "AI Safety & Ethics Advisory: Provide strategic guidance on AI alignment and responsible deployment to frontier AI organizations. Translated philosophical and technical safety literature into actionable frameworks for production systems"
+          - "Verifiable AI Systems: Design verification frameworks for scientific domains where accuracy is non-negotiable and ground truth is complex. Address the foundational challenge of making AI outputs verifiable in domains requiring deep expertise—creating rigorous evaluation criteria that bridge computational outputs with scientific validity"
+          - "Unique Value: Rare combination of PhD-level scientific expertise (physics, chemistry, materials science), frontier AI research experience, and philosophical depth—enabling bridge between technical capability and responsible deployment"
 
       - company: Electronic Arts
         position: Physics Software Engineer (Internship)
