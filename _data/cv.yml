@@ -1,189 +1,168 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Dr. Marin Moran
+  label: AI Research Scientist
+  email: mm04926412@gmail.com
+  phone: "07952651809"
+  location: Liverpool, UK
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Multi-disciplinary AI researcher with 6+ years of experience in AI. My T-shaped expertise spans scaling distributed, multi-GPU training pipelines, developing real-time AI for AAA game engines, and advancing representation learning in materials science. I have delivered consultancy ranging from organising large scale scientific RLVR data collection efforts from domain experts and designing reinforcement learning systems around that data for frontier labs, to ethics seminars grounded in philosophy and alignment literature. While I am dedicated to delivering high-quality results, I also strive to maintain an energetic, person-driven, and approachable demeanour in all things. There is no such thing as a stupid question and I want everyone on the team to feel included, valued, and heard.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
     - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: marin-moran
+    - network: GitHub
+      username: msmfai
 
   sections:
-    Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
-
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Electronic Arts (SEED)
+        position: AI, Physics, and Rendering Research Scientist
+        location: Remote, Global
+        start_date: 2024-10
+        end_date: present
+        summary: Leading real-time generative AI and LLM research for AAA games
         highlights:
-          - Relativity
-          - Description 2.
+          - Engineered device optimised real-time generative neural networks, deployed to millions of players, reduced asset memory footprints by 99%, register pressure by 95%, and ALU costs by 20% compared to the original system while improving visual quality
+          - Project lead in usage of LLMs in a real time context, taking full ownership of research, development and implementation of novel architectures, fine-tuning methods, and harnesses
+          - Led pioneering research into what provably stable dynamic game and narrative design can look like with the use of LLMs and generative AI – full ownership from conceptualisation to prototype
+          - Solved long standing fundamental mathematical problems in sparse rendering leveraging my materials science background
+          - Authored companywide strategy for LLM design in designable, completable, stable video games
+          - Pioneer in enabling creative agency in AI assisted artistic workflows
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: University of Liverpool, Materials Innovation Factory
+        position: Post-Graduate Machine Learning Researcher
+        location: Liverpool, UK
+        start_date: 2019-10
+        end_date: 2024-10
+        summary: Created novel transformer architectures and representation learning frameworks for materials science
         highlights:
-          - Description 1.
-          - Description 2.
+          - Created a novel transformer / graph architecture and representation for machine learning in the materials science / molecular domain with unstructured 3D data, respecting the underlying symmetry groups of the data (PyTorch, Python tech stack)
+          - Developed a novel representation learning framework for transformer / graph machine learning models in the materials science / molecular domain (PyTorch, Python tech stack)
+          - Collaborated on a locally hosted cloud service for the deployment of supervised models in the materials science / physics / chemistry domain (Flask, Scikit-learn, Python tech stack)
+          - Created bespoke data architectures to facilitate high throughput, distributed and multi-GPU training on linux HPC (HDF5, MongoDB, ray, python tech stack)
+          - Scaled training of materials science transformer models across SLURM clusters using DeepSpeed, custom kernels and symmetry optimisations through PyTorch geometric
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: Solomonoff Consultancy
+        position: Founder & Principal Consultant
+        location: Remote
+        start_date: 2024-02
+        end_date: present
+        summary: AI ethics consulting and scientific AI training for frontier labs
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "AI Ethics Consultant: Applied self-taught background in philosophy and ethics to create practical workshops on safer, kinder AI backed by appropriate technical and philosophical literature"
+          - "Scientific AI Trainer & Project Lead (Pareto, June 2024–Present): Led project on delivery of PhD level datasets for verifying scientific capabilities of AI, coordinating 100+ experts while creating considerable amounts of PhD level scientific challenges"
+          - Provided consultancy in robust usage of LLMs and AI to achieve organisational goals by building interpretable robust pipelines founded in statistical theory
+          - Received excellent feedback for creating actionable, counter-intuitive and accessible content
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - company: Electronic Arts
+        position: Physics Software Engineer (Internship)
+        location: Guildford, UK
+        start_date: 2023-09
+        end_date: 2024-03
+        summary: Memory optimization and legacy code modernization for physics engine
+        highlights:
+          - Achieved significant memory optimizations, reducing the memory requirements of a critical legacy application by several gigabytes by rewriting the core data architecture, approximately 50% for most workloads (C++, C++/CLI, C#)
+          - Incorporated in app documentation promoting accessibility for people without scientific backgrounds to interface with the physics engine
+          - Created a "fuzzy regex" neurosymbolic pipeline for automatically upgrading legacy code with AI in an interpretable, reliable and reproducible fashion (python, GPT 3.5 era)
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+    Education:
+      - institution: University of Liverpool
+        location: Liverpool, UK
+        url: https://www.liverpool.ac.uk/
+        area: Deep Learning for Materials Science
+        studyType: PhD
+        start_date: 2019-10
+        end_date: 2024-09
+        highlights:
+          - "Thesis: Novel transformer architectures and representation learning for materials informatics"
+          - Published 4 papers in top-tier journals (Digital Discovery, npj Computational Materials, Angewandte Chemie)
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+      - institution: University of Liverpool
+        location: Liverpool, UK
+        area: Physics
+        studyType: Integrated Masters (First Class Honours)
+        start_date: 2015-09
+        end_date: 2019-05
+        highlights:
+          - First Class Honours
+          - Focus on computational physics and machine learning applications
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - label: Programming Languages
+        keywords:
+          - Python (Fluent)
+          - C++ (Proficient)
+          - C# (Proficient)
+          - C++/CLI (Proficient)
+          - MATLAB (Fluent)
+          - Java (Proficient)
+          - HLSL (Proficient)
+          - CUDA (Proficient)
+          - GLSL (Proficient)
+          - Javascript (Proficient)
+          - 6502 assembly (Fluent)
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
+      - label: ML Tech Stack
+        keywords:
+          - PyTorch (Lightning)
+          - Keras / TensorFlow
+          - Scikit-learn
+          - NumPy
+          - Pandas
+          - Matplotlib
+          - MongoDB
+          - SQLite
+          - Ray
+          - JAX
+          - ONNX
+          - Git
 
-      - name: English
-        summary: "Fluent"
+      - label: ML Domains
+        keywords:
+          - Deep learning
+          - Representation learning
+          - Generative AI
+          - Transformers
+          - Graph neural networks
+          - Contrastive learning
+          - Variational autoencoders
+          - Diffusion models
+          - GAN architectures
+          - Geometric learning
+          - Neural NLP
+
+      - label: Software Engineering
+        keywords:
+          - Real-time physics simulation
+          - GPU compute
+          - CUDA kernel programming
+          - Graphics programming
+          - Distributed ML
+          - Containerised development
+          - Agentic systems
+          - Full stack development
+
+    Leadership:
+      - organization: University of Liverpool RPG Society
+        position: Elected President
+        start_date: 2015
+        end_date: 2019
+        highlights:
+          - Managed 50-100 members for 4 years
+          - Expanded the society and made lasting connections with local businesses
+
+      - organization: University of Liverpool
+        position: Python Teaching Demonstrator
+        start_date: 2019
+        end_date: 2022
+        highlights:
+          - Taught Python to undergraduate physicists for 3 years
+          - Received positive feedback for being attentive and empathetic when demonstrating best practice for physical simulations in Python and MATLAB
 
     Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - Dungeons and dragons game master & community organiser
+      - Classical singing (Baritone to Soprano) & throat singing
+      - Developing NES and retro video games (6502 assembly)
+      - Philosophy with focus on AI ethics, alignment, and the social impact of technology
+      - Short story author focusing on the social impact of technology
+      - Amateur quant with interest in scale invariant fractal behaviour of markets and social network-based modelling
