@@ -167,8 +167,18 @@ cv:
           - Grant Writing
 
     Interests:
-      - Tabletop RPG design and community coordination
-      - Vocal performance (classical and extended techniques)
-      - Retro game development (6502 assembly for NES)
-      - AI alignment, ethics, and philosophy of technology
-      - Quantitative analysis of market microstructure and network dynamics
+      - name: Creative Pursuits
+        keywords:
+          - Tabletop RPG design and community coordination
+          - Vocal performance (classical and extended techniques)
+          - Retro game development (6502 assembly for NES)
+      - name: AI Research & Philosophy
+        keywords:
+          - AI alignment and safety
+          - Ethics and philosophy of technology
+          - Frontier AI capabilities
+      - name: Quantitative Systems
+        keywords:
+          - Market microstructure analysis
+          - Network dynamics
+          - Complex systems modeling
