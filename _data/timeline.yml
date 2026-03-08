@@ -2,6 +2,11 @@
 # Each entry can have an optional icon (image path) or emoji (single character/emoji)
 # If neither is specified, a default marker will be used
 
+- date: "January 2025"
+  emoji: "📄"
+  content: |
+    **Establishing Deep InfoMax as an effective self-supervised learning methodology in materials informatics** published in Digital Discovery. This work enabled representation learning on crystal structures without reconstruction, addressing the fundamental challenge that crystal graphs have heterogeneous topology with no canonical ordering, which makes standard autoencoder approaches intractable.
+
 - date: "October 2024"
   icon: "user_assets/SEED LOGO.png"
   content: |
@@ -17,11 +22,6 @@
   content: |
     Founded Solomonoff Consultancy, providing AI safety and scientific AI consulting to frontier AI labs and AI-native companies.
   show_if: consultancy
-
-- date: "January 2025"
-  emoji: "📄"
-  content: |
-    **Establishing Deep InfoMax as an effective self-supervised learning methodology in materials informatics** published in Digital Discovery. This work enabled representation learning on crystal structures without reconstruction, addressing the fundamental challenge that crystal graphs have heterogeneous topology with no canonical ordering, which makes standard autoencoder approaches intractable.
 
 - date: "August 2023"
   emoji: "📄"

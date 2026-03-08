@@ -10,7 +10,7 @@ contact_note:
 
 # Toggle Solomonoff Consultancy visibility
 # Set to true to show consultancy mentions, false to hide them
-show_consultancy: false
+show_consultancy: true
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Academic website for Dr. Marin Moran, AI Research Scientist.
 footer_text: >

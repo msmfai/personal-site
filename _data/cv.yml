@@ -25,21 +25,6 @@ cv:
           - Technical lead for LLM integration in real-time interactive systems, driving architecture design, fine-tuning methodologies, and evaluation frameworks across research and production teams
           - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to prototype
           - Solved long standing mathematical problem in sparse rendering through transfer of materials science expertise
-          - Authored and drove adoption of technical strategy for LLM integration in stable, completable game experiences, leading principals and senior staff
-          - Established novel workflows enabling creative agency in AI-assisted content pipelines
-
-      - company: University of Liverpool, Materials Innovation Factory
-        position: Post-Graduate Machine Learning Researcher
-        location: Liverpool, UK
-        start_date: 2019-10
-        end_date: 2024-10
-        summary: Created novel transformer architectures and representation learning frameworks for materials science
-        highlights:
-          - Created a novel transformer / graph architecture and representation for machine learning in the materials science / molecular domain with unstructured 3D data, respecting the underlying symmetry groups of the data (PyTorch, Python tech stack)
-          - Developed a novel representation learning framework for transformer / graph machine learning models in the materials science / molecular domain (PyTorch, Python tech stack)
-          - Collaborated on a locally hosted cloud service for the deployment of supervised models in the materials science / physics / chemistry domain (Flask, Scikit-learn, Python tech stack)
-          - Created bespoke data architectures to facilitate high throughput, distributed and multi-GPU training on linux HPC (HDF5, MongoDB, ray, python tech stack)
-          - Scaled training of materials science transformer models across SLURM clusters using DeepSpeed, custom kernels and symmetry optimisations through PyTorch geometric
 
       - company: Solomonoff Consultancy
         position: Founder & Principal Consultant
@@ -52,6 +37,19 @@ cv:
           - "AI Safety & Ethics Advisory: Provide strategic guidance on AI alignment and responsible deployment to frontier AI organizations. Translated philosophical and technical safety literature into actionable frameworks for production systems"
           - "Verifiable AI Systems: Design verification frameworks for scientific domains where expertise is implicit and evaluation extends beyond binary correctness. Advise on constructing benchmarks that test whether models learn to do science, not just memorize it"
 
+      - company: University of Liverpool, Materials Innovation Factory
+        position: Post-Graduate Machine Learning Researcher
+        location: Liverpool, UK
+        start_date: 2019-10
+        end_date: 2024-10
+        summary: Created novel transformer architectures and representation learning frameworks for materials science
+        highlights:
+          - Created a novel transformer / graph architecture and representation for machine learning in the materials science / molecular domain with unstructured 3D data, respecting the underlying symmetry groups of the data
+          - Developed a novel representation learning framework for transformer / graph machine learning models in the materials science / molecular domain
+          - Collaborated on a locally hosted cloud service for the deployment of supervised models in the materials science / physics / chemistry domain
+          - Created bespoke data architectures to facilitate high throughput, distributed and multi-GPU training on linux HPC
+          - Scaled training of materials science transformer models across SLURM clusters using DeepSpeed, custom kernels and symmetry optimisations through PyTorch geometric
+
       - company: Electronic Arts
         position: Physics Software Engineer (Internship)
         location: Guildford, UK
@@ -59,9 +57,9 @@ cv:
         end_date: 2024-03
         summary: Memory optimization and legacy code modernization for physics systems
         highlights:
-          - Achieved significant memory optimizations through core data architecture redesign, reducing memory requirements by approximately 50% for typical workloads (C++, C++/CLI, C#)
+          - Achieved significant memory optimizations through core data architecture redesign, reducing memory requirements by approximately 50% for typical workloads
           - Developed in-app documentation improving accessibility of physics engine for non-specialist users
-          - Created AI-assisted code modernization pipeline for legacy codebase maintenance using neurosymbolic approaches (Python, GPT-3.5 era)
+          - Created AI-assisted code modernization pipeline for legacy codebase maintenance using neurosymbolic approaches
 
     Education:
       - institution: University of Liverpool
