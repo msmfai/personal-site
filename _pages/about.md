@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: AI Research Scientist
+subtitle: Interdisciplinary researcher at the frontiers of entertainment
 
 profile:
   align: right
