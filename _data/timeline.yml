@@ -20,7 +20,7 @@
 - date: "February 2024"
   icon: "user_assets/SMF-Logo.png"
   content: |
-    Founded Solomonoff Consultancy, providing AI safety and scientific AI consulting to frontier AI labs and AI-native companies.
+    Founded Solomonoff Consultancy, providing AI safety and scientific AI consulting to AI labs and the broader frontier AI ecosystem. Mostly specialised in RLVR consulting for training frontier scientific capabilities, making the unverifiable, verifiable.
   show_if: consultancy
 
 - date: "August 2023"
