@@ -1,37 +1,48 @@
-# Timeline entries (automatically sorted in reverse chronological order)
+# Timeline entries (displayed in order)
+# Each entry can have an optional icon (image path) or emoji (single character/emoji)
+# If neither is specified, a default marker will be used
 
 - date: "October 2024"
+  icon: "https://media.ea.com/content/dam/ea/seed/images/seed-logo.png"
   content: |
     Joined Electronic Arts SEED as AI, Physics, and Rendering Research Scientist. Leading real-time generative AI and LLM research for AAA games.
 
 - date: "September 2024"
+  emoji: "🎓"
   content: |
     Completed PhD in Deep Learning for Materials Science at University of Liverpool. Published 4 papers in top-tier journals including Digital Discovery, npj Computational Materials, and Angewandte Chemie.
 
 - date: "February 2024"
+  icon: "user_assets/SMF-Logo.png"
   content: |
     Founded Solomonoff Consultancy, providing AI safety and scientific AI consulting to frontier AI labs and AI-native companies.
 
 - date: "2023"
+  emoji: "📄"
   content: |
     Published Site-Net architecture in Digital Discovery—novel transformer architecture combining global self-attention with crystallographic symmetry constraints for materials science.
 
 - date: "September 2023"
+  icon: "https://media.ea.com/content/dam/ea/seed/images/seed-logo.png"
   content: |
     Started internship at Electronic Arts as Physics Software Engineer—wanted to work on low-level systems programming after years of Python in academia. Finally got a chance to put template metaprogramming to good use and achieved 50% memory reduction on critical legacy infrastructure.
 
 - date: "2021"
+  emoji: "🔬"
   content: |
     First experimental validation of ML-guided materials discovery published in Angewandte Chemie. Synthesized and characterized predicted compound, confirming computational predictions.
 
 - date: "October 2019"
+  emoji: "🎓"
   content: |
     Started PhD at University of Liverpool, Materials Innovation Factory, focusing on novel transformer architectures and representation learning for materials science.
 
 - date: "May 2019"
+  emoji: "🎓"
   content: |
     Graduated with Integrated Masters in Physics (First Class Honours) from University of Liverpool, with focus on computational physics and machine learning applications.
 
 - date: "2018-2019"
+  emoji: "💡"
   content: |
     Final year of my Integrated Masters—particle physics project with CERN, but couldn't stop reading ML papers. Years of linearizing quantum systems into vector spaces made a lecturer's offhand comment—"anything is a vector in the right basis"—resonate. Seeing attention mechanisms as learned graph structures over vector embeddings felt like watching symbolic and subsymbolic AI start to converge. Applied for ML PhDs instead of continuing in physics.
