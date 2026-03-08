@@ -29,6 +29,8 @@ timeline:
   limit: # number of timeline items to show
 ---
 
-Welcome to my space! I'm Marin. I do AI, physics, and rendering research at Electronic Arts SEED, mostly real-time generative AI and LLMs to see what we can do now that we wouldn't do before. I started in academic physics, pivoting into AI with my PhD on transformer architectures for materials science, and it was a shared foundation in point clouds, graphs, and learning structure from unstructured data that brought me to the games industry.
+Welcome to my space! I'm Marin. I work on AI, physics, and rendering problems at Electronic Arts SEED - more focused on exploration than the exploitation, truly novel dynamic worlds that require a machine with common sense.
+
+My background spans academic physics, materials science, and game development. The common thread is learning structure from unstructured data: point clouds, graphs, geometric relationships. I built transformer architectures for crystal structures during my PhD, and that same mathematical foundation applies to game AI.
 
 {% if site.show_consultancy %}I also run Solomonoff Consultancy, working on AI safety and verification for scientific capabilities in frontier models.{% endif %}
