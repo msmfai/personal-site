@@ -9,6 +9,11 @@
 <div class="timeline {% if timeline_scrollable %}scrollable{% endif %}">
   {% if site.data.timeline %}
     {% for entry in site.data.timeline limit: timeline_limit %}
+      {% assign show_entry = true %}
+      {% if entry.show_if == "consultancy" and site.show_consultancy != true %}
+        {% assign show_entry = false %}
+      {% endif %}
+      {% if show_entry %}
       <div class="timeline-item">
         {% if entry.icon %}
           <div class="timeline-marker timeline-marker-icon">
@@ -24,6 +29,7 @@
           <div class="timeline-text">{{ entry.content | markdownify }}</div>
         </div>
       </div>
+      {% endif %}
     {% endfor %}
   {% else %}
     <p class="font-italic">No timeline entries found.</p>
@@ -72,14 +78,14 @@
   }
 
   .timeline-marker-icon {
-    width: 72px;
-    height: 72px;
-    left: -2.75rem;
+    width: 48px;
+    height: 48px;
+    left: -2.25rem;
     top: 0;
-    border-radius: 8px;
+    border-radius: 6px;
     background: var(--global-bg-color);
     border: 2px solid var(--global-divider-color);
-    padding: 6px;
+    padding: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,9 +98,9 @@
   }
 
   .timeline-marker-emoji {
-    width: 72px;
-    height: 72px;
-    left: -2.75rem;
+    width: 48px;
+    height: 48px;
+    left: -2.25rem;
     top: 0;
     border-radius: 50%;
     background: var(--global-bg-color);
@@ -102,7 +108,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 42px;
+    font-size: 28px;
   }
 
   .timeline-date {

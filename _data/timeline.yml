@@ -16,6 +16,7 @@
   icon: "user_assets/SMF-Logo.png"
   content: |
     Founded Solomonoff Consultancy, providing AI safety and scientific AI consulting to frontier AI labs and AI-native companies.
+  show_if: consultancy
 
 - date: "2023"
   emoji: "📄"
