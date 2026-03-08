@@ -5,7 +5,8 @@
       "Bash(docker compose:*)",
       "Bash(netstat:*)",
       "Bash(findstr:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []

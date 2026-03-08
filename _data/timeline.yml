@@ -3,7 +3,7 @@
 # If neither is specified, a default marker will be used
 
 - date: "October 2024"
-  icon: "https://media.ea.com/content/dam/ea/seed/images/seed-logo.png"
+  icon: "user_assets/SEED LOGO.png"
   content: |
     Joined Electronic Arts SEED as AI, Physics, and Rendering Research Scientist. Leading real-time generative AI and LLM research for AAA games.
 
@@ -23,7 +23,7 @@
     Published Site-Net architecture in Digital Discovery—novel transformer architecture combining global self-attention with crystallographic symmetry constraints for materials science.
 
 - date: "September 2023"
-  icon: "https://media.ea.com/content/dam/ea/seed/images/seed-logo.png"
+  icon: "user_assets/SEED LOGO.png"
   content: |
     Started internship at Electronic Arts as Physics Software Engineer—wanted to work on low-level systems programming after years of Python in academia. Finally got a chance to put template metaprogramming to good use and achieved 50% memory reduction on critical legacy infrastructure.
 
