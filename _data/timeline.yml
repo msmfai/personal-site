@@ -5,7 +5,7 @@
 - date: "October 2024"
   icon: "user_assets/SEED LOGO.png"
   content: |
-    Joined Electronic Arts SEED as AI, Physics, and Rendering Research Scientist. Leading real-time generative AI and LLM research for AAA games.
+    Joined Electronic Arts SEED as an AI Research Scientist. Working across generative AI, physics simulation, and rendering pipelines for real-time applications in AAA games.
 
 - date: "September 2024"
   emoji: "🎓"
@@ -18,20 +18,35 @@
     Founded Solomonoff Consultancy, providing AI safety and scientific AI consulting to frontier AI labs and AI-native companies.
   show_if: consultancy
 
-- date: "2023"
+- date: "January 2025"
   emoji: "📄"
   content: |
-    Published Site-Net architecture in Digital Discovery—novel transformer architecture combining global self-attention with crystallographic symmetry constraints for materials science.
+    **Establishing Deep InfoMax as an effective self-supervised learning methodology in materials informatics** published in Digital Discovery. This work enabled representation learning on crystal structures without reconstruction, addressing the fundamental challenge that crystal graphs have heterogeneous topology with no canonical ordering, which makes standard autoencoder approaches intractable.
+
+- date: "August 2023"
+  emoji: "📄"
+  content: |
+    **Site-Net: using global self-attention and real-space supercells to capture long-range interactions in crystal structures** published in Digital Discovery. This pure attention-based transformer learns from approximately 500-atom supercells. Attention heads emergently specialized for short versus long-range interactions, and restricting attention to 5Å was demonstrated to hurt performance at all data availabilities, showing the model meaningfully captures physics beyond nearest neighbors.
+
+- date: "January 2023"
+  emoji: "📄"
+  content: |
+    **A database of experimentally measured lithium solid electrolyte conductivities evaluated with machine learning** published in npj Computational Materials. We assembled an expert-curated dataset of 820 lithium ion conductors from 214 sources, measured by a.c. impedance spectroscopy across 5-873°C. The dataset was evaluated with a CrabNet classifier to predict high versus low conductivity from composition alone, democratizing access to battery materials data.
+
+- date: "September 2023"
+  emoji: "📄"
+  content: |
+    **The Liverpool materials discovery server: a suite of computational tools for the collaborative discovery of materials** published in Digital Discovery. We built a web platform hosting six state-of-the-art computational tools at lmds.liverpool.ac.uk, enabling experimental chemists to run materials discovery workflows without computational expertise. The entire stack was open-sourced with API and setup scripts for reproducibility.
 
 - date: "September 2023"
   icon: "user_assets/SEED LOGO.png"
   content: |
-    Started internship at Electronic Arts as Physics Software Engineer—wanted to work on low-level systems programming after years of Python in academia. Finally got a chance to put template metaprogramming to good use and achieved 50% memory reduction on critical legacy infrastructure.
+    Interned at Electronic Arts Frostbite. Reduced engine memory usage by 50% (~5GB) through C++ template metaprogramming, built a GPT-3.5 powered automated refactoring pipeline with neuro-symbolic fuzzy regex matching that shipped to production, and designed a real-time cloth fold simulation system based on recent academic literature.
 
-- date: "2021"
-  emoji: "🔬"
+- date: "July 2021"
+  emoji: "📄"
   content: |
-    First experimental validation of ML-guided materials discovery published in Angewandte Chemie. Synthesized and characterized predicted compound, confirming computational predictions.
+    **Discovery of a Low Thermal Conductivity Oxide Guided by Probe Structure Prediction and Machine Learning** published in Angewandte Chemie International Edition. We discovered Ba₁₀Y₆Ti₄O₂₇, a metastable quasicrystal with aperiodic structure and the lowest thermal conductivity of any first-transition-series oxide. This work combined structure prediction with machine learning-based property screening to identify and subsequently synthesize the material in the lab.
 
 - date: "October 2019"
   emoji: "🎓"
@@ -46,4 +61,4 @@
 - date: "2018-2019"
   emoji: "💡"
   content: |
-    Final year of my Integrated Masters—particle physics project with CERN, but couldn't stop reading ML papers. Years of linearizing quantum systems into vector spaces made a lecturer's offhand comment—"anything is a vector in the right basis"—resonate. Seeing attention mechanisms as learned graph structures over vector embeddings felt like watching symbolic and subsymbolic AI start to converge. Applied for ML PhDs instead of continuing in physics.
+    Final year of Integrated Masters working on particle physics with CERN. A lecturer's comment that "everything is a vector in the right basis" crystallized an insight: just as choosing the right basis reveals structure in physical systems, transformers could learn to discover structure through geometric relationships in embedding space. Saw a future where foundation models with enough data would learn the structure of everything, opening a path to AGI. Applied for ML PhDs instead of continuing in physics.

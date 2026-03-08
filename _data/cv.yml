@@ -3,7 +3,8 @@ cv:
   label: AI Research Scientist
   location: Liverpool, UK
   image: ""
-  summary: Multi-disciplinary AI researcher with 6+ years of experience in AI. My T-shaped expertise spans scaling distributed, multi-GPU training pipelines, developing real-time AI for AAA game engines, and advancing representation learning in materials science. I have delivered consultancy ranging from organising large scale scientific RLVR data collection efforts from domain experts and designing reinforcement learning systems around that data for frontier labs, to ethics seminars grounded in philosophy and alignment literature. While I am dedicated to delivering high-quality results, I also strive to maintain an energetic, person-driven, and approachable demeanour in all things. There is no such thing as a stupid question and I want everyone on the team to feel included, valued, and heard.
+  summary: >-
+    I develop novel neural network architectures and deploy them in production systems. During my PhD, I created transformer frameworks for materials science and scaled them across HPC clusters using distributed training. At EA SEED, I work on real-time generative AI for games, achieving substantial performance improvements in production. I advise frontier AI labs on verification frameworks for scientific reasoning in language models and on AI safety and alignment strategies. My background spans physics, chemistry, philosophy, and systems engineering. I often find that insights from one field solve problems in another, whether applying materials science principles to game AI architectures or bringing philosophical frameworks to AI safety work. I see these connections and lead teams to implement them. When leading teams, I believe the best work happens when people feel safe asking questions and challenging assumptions.
 
   social_networks:
     - network: LinkedIn

@@ -6,7 +6,13 @@
       "Bash(netstat:*)",
       "Bash(findstr:*)",
       "Bash(python:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(timeout 10 docker compose:*)",
+      "Bash(exit 0)",
+      "Bash(cat:*)",
+      "Bash(npx prettier:*)",
+      "Bash(npm install:*)",
+      "Bash(timeout 60 bash -c 'while ! docker compose ps | grep -q \"\"Up\"\"; do sleep 2; done; echo \"\"Server is up\"\"')"
     ],
     "deny": [],
     "ask": []

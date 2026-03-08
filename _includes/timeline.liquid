@@ -8,13 +8,14 @@
 
 <div class="timeline {% if timeline_scrollable %}scrollable{% endif %}">
   {% if site.data.timeline %}
-    {% for entry in site.data.timeline limit: timeline_limit %}
-      {% assign show_entry = true %}
-      {% if entry.show_if == "consultancy" and site.show_consultancy != true %}
-        {% assign show_entry = false %}
-      {% endif %}
-      {% if show_entry %}
-      <div class="timeline-item">
+    <div class="timeline-content-wrapper">
+      {% for entry in site.data.timeline limit: timeline_limit %}
+        {% assign show_entry = true %}
+        {% if entry.show_if == "consultancy" and site.show_consultancy != true %}
+          {% assign show_entry = false %}
+        {% endif %}
+        {% if show_entry %}
+        <div class="timeline-item">
         {% if entry.icon %}
           <div class="timeline-marker timeline-marker-icon">
             <img src="{{ entry.icon | relative_url }}" alt="" />
@@ -28,9 +29,10 @@
           <div class="timeline-date">{{ entry.date }}</div>
           <div class="timeline-text">{{ entry.content | markdownify }}</div>
         </div>
-      </div>
-      {% endif %}
-    {% endfor %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   {% else %}
     <p class="font-italic">No timeline entries found.</p>
   {% endif %}
@@ -39,7 +41,7 @@
 <style>
   .timeline {
     position: relative;
-    padding-left: 3.5rem;
+    padding-left: 0;
     margin-top: 1rem;
   }
 
@@ -49,12 +51,16 @@
     padding-right: 1rem;
   }
 
-  .timeline::before {
+  .timeline-content-wrapper {
+    position: relative;
+  }
+
+  .timeline-content-wrapper::before {
     content: '';
     position: absolute;
     left: 19px;
     top: 0;
-    height: 100%;
+    bottom: 0;
     width: 2px;
     background: var(--global-divider-color);
   }
@@ -63,6 +69,7 @@
     position: relative;
     margin-bottom: 1.5rem;
     padding-left: 0;
+    margin-left: 60px;
   }
 
   .timeline-marker {
@@ -81,7 +88,7 @@
     position: absolute;
     width: 38px;
     height: 38px;
-    left: 0px;
+    left: -60px;
     top: 0;
     border-radius: 6px;
     background: var(--global-bg-color);
@@ -102,7 +109,7 @@
     position: absolute;
     width: 38px;
     height: 38px;
-    left: 0px;
+    left: -60px;
     top: 0;
     border-radius: 50%;
     background: var(--global-bg-color);
