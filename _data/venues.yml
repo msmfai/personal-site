@@ -1,3 +1,39 @@
+# Journal and Venue Configuration
+#
+# This file defines colors and URLs for journal badges in publications.
+# Each entry should match the "abbr" field in _bibliography/papers.bib
+#
+# Format:
+#   "Journal Abbreviation":
+#     url: <journal homepage or DOI link>        # Optional: makes badge clickable
+#     color: "#HEXCOLOR"                         # Badge background color
+#     text_color: "#HEXCOLOR"                    # Optional: text color (if needed for contrast)
+#
+# Color choices should be:
+# - Distinct from other journals
+# - Readable in both light and dark modes
+# - Reflective of journal identity/brand where appropriate
+
+# ==================== YOUR PUBLICATIONS ====================
+
+"Digit. Discov.":
+  url: https://pubs.rsc.org/en/journals/journalissues/dd
+  color: "#17a2b8"  # Teal - represents discovery/innovation
+
+"npj Comput. Mater.":
+  url: https://www.nature.com/npjcompumats/
+  color: "#0066cc"  # Deep blue - Nature portfolio, computational science
+
+"Angew. Chem.":
+  url: https://onlinelibrary.wiley.com/journal/15213773
+  color: "#8b1538"  # Wine/burgundy - prestigious chemistry journal
+
+"PhD Thesis":
+  color: "#6f42c1"      # Purple - academic distinction
+  text_color: "#ffffff" # White text for contrast
+
+# ==================== EXAMPLE JOURNALS (template examples) ====================
+
 "AJP":
   url: https://aapt.scitation.org/journal/ajp
   color: "#00369f"
@@ -8,18 +44,20 @@
 "Vision":
   color: "#009f36"
 
-"Digit. Discov.":
-  url: https://pubs.rsc.org/en/journals/journalissues/dd
-  color: "#17a2b8"
-
-"npj Comput. Mater.":
-  url: https://www.nature.com/npjcompumats/
-  color: "#0066cc"
-
-"Angew. Chem.":
-  url: https://onlinelibrary.wiley.com/journal/15213773
-  color: "#8b1538"
-
-"PhD Thesis":
-  color: "#6f42c1"
-  text_color: "#ffffff"
+# ==================== ADD NEW JOURNALS HERE ====================
+#
+# Examples:
+#
+# "Nature":
+#   url: https://www.nature.com
+#   color: "#c73e1d"      # Nature red
+#
+# "Science":
+#   url: https://www.science.org
+#   color: "#d32f2f"      # Science red
+#
+# "NeurIPS":
+#   color: "#8b0000"      # Dark red for ML conference
+#
+# "ICML":
+#   color: "#4a148c"      # Deep purple for ML conference

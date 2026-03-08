@@ -156,14 +156,10 @@ cv:
 
       - label: Game Development
         keywords:
-          - Blueprint (Unreal)
-          - Unity (C#)
+          - Unreal
+          - Unity
+          - Frostbite
           - Perforce
-
-      - label: Research & Communication
-        keywords:
-          - Peer Review
-          - Grant Writing
 
     Interests:
       - name: Creative Pursuits
