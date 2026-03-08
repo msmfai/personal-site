@@ -29,7 +29,7 @@ timeline:
   limit: # number of timeline items to show
 ---
 
-Welcome to my space! I'm Marin. I work on AI, physics, and rendering problems at Electronic Arts SEED - more focused on exploration than the exploitation, truly novel dynamic worlds that require a machine with common sense.
+Welcome to my space! I'm Marin. I work on AI, physics, and rendering problems at Electronic Arts SEED - more focused on exploration than exploitation, truly novel dynamic worlds that require a machine with common sense.
 
 My background spans academic physics, materials science, and game development. The common thread is learning structure from unstructured data: point clouds, graphs, geometric relationships. I built transformer architectures for crystal structures during my PhD, and that same foundation applies to my work in the games industry.
 
