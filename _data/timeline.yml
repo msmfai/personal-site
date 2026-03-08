@@ -11,6 +11,11 @@
   icon: "user_assets/SEED LOGO.png"
   content: |
     Joined Electronic Arts SEED as an AI Research Scientist. Working across generative AI, physics simulation, and rendering pipelines for real-time applications in AAA games.
+  supplementary:
+    image: "user_assets/ea-seed.jpg"
+    link: "https://www.ea.com/seed"
+    alt: "EA SEED"
+    caption: "[EA SEED](https://www.ea.com/seed) - Search for Extraordinary Experiences Division"
 
 - date: "September 2024"
   emoji: "🎓"
@@ -52,6 +57,11 @@
   emoji: "🎓"
   content: |
     Started PhD at University of Liverpool, Materials Innovation Factory, focusing on novel transformer architectures and representation learning for materials science.
+  supplementary:
+    image: "user_assets/MIF.jpeg"
+    link: "https://www.liverpool.ac.uk/materials-innovation-factory/"
+    alt: "Materials Innovation Factory"
+    caption: "[Materials Innovation Factory](https://www.liverpool.ac.uk/materials-innovation-factory/) - Unique facilities, purpose-built for innovation"
 
 - date: "May 2019"
   emoji: "🎓"
@@ -62,3 +72,8 @@
   emoji: "💡"
   content: |
     Final year of Integrated Masters working on particle physics with CERN. A lecturer's comment that "everything is a vector in the right basis" crystallized an insight: just as choosing the right basis reveals structure in physical systems, transformers could learn to discover structure through geometric relationships in embedding space. Saw a future where foundation models with enough data would learn the structure of everything, opening a path to AGI. Applied for ML PhDs instead of continuing in physics.
+  supplementary:
+    image: "user_assets/liverpool-particle-physics.jpg"
+    link: "https://www.liverpool.ac.uk/physics/research/particle-physics/"
+    alt: "University of Liverpool Particle Physics"
+    caption: "[University of Liverpool Particle Physics](https://www.liverpool.ac.uk/physics/research/particle-physics/) - 70 years of partnership with CERN"

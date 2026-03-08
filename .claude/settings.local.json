@@ -12,7 +12,8 @@
       "Bash(cat:*)",
       "Bash(npx prettier:*)",
       "Bash(npm install:*)",
-      "Bash(timeout 60 bash -c 'while ! docker compose ps | grep -q \"\"Up\"\"; do sleep 2; done; echo \"\"Server is up\"\"')"
+      "Bash(timeout 60 bash -c 'while ! docker compose ps | grep -q \"\"Up\"\"; do sleep 2; done; echo \"\"Server is up\"\"')",
+      "Bash(pip install:*)"
     ],
     "deny": [],
     "ask": []

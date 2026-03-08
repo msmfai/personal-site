@@ -1,6 +1,7 @@
 {% comment %}
   Timeline component for displaying chronological history
   Uses entries from _data/timeline.yml
+  Supports alternating left/right layout with supplementary content
 {% endcomment %}
 
 {% assign timeline_limit = include.limit %}
@@ -9,27 +10,50 @@
 <div class="timeline {% if timeline_scrollable %}scrollable{% endif %}">
   {% if site.data.timeline %}
     <div class="timeline-content-wrapper">
+      {% assign entry_index = 0 %}
       {% for entry in site.data.timeline limit: timeline_limit %}
         {% assign show_entry = true %}
         {% if entry.show_if == "consultancy" and site.show_consultancy != true %}
           {% assign show_entry = false %}
         {% endif %}
         {% if show_entry %}
-        <div class="timeline-item">
-        {% if entry.icon %}
-          <div class="timeline-marker timeline-marker-icon">
-            <img src="{{ entry.icon | relative_url }}" alt="" />
+        {% assign is_even = entry_index | modulo: 2 %}
+        <div class="timeline-item {% if is_even == 0 %}timeline-item-left{% else %}timeline-item-right{% endif %}">
+        <div class="timeline-main">
+          {% if entry.icon %}
+            <div class="timeline-marker timeline-marker-icon">
+              <img src="{{ entry.icon | relative_url }}" alt="" />
+            </div>
+          {% elsif entry.emoji %}
+            <div class="timeline-marker timeline-marker-emoji">{{ entry.emoji }}</div>
+          {% else %}
+            <div class="timeline-marker"></div>
+          {% endif %}
+          <div class="timeline-content">
+            <div class="timeline-date">{{ entry.date }}</div>
+            <div class="timeline-text">{{ entry.content | markdownify }}</div>
           </div>
-        {% elsif entry.emoji %}
-          <div class="timeline-marker timeline-marker-emoji">{{ entry.emoji }}</div>
-        {% else %}
-          <div class="timeline-marker"></div>
+        </div>
+        {% if entry.supplementary %}
+        <div class="timeline-supplementary">
+          {% if entry.supplementary.image %}
+            <div class="timeline-supp-image">
+              {% if entry.supplementary.link %}
+                <a href="{{ entry.supplementary.link }}" target="_blank">
+                  <img src="{{ entry.supplementary.image | relative_url }}" alt="{{ entry.supplementary.alt | default: '' }}" />
+                </a>
+              {% else %}
+                <img src="{{ entry.supplementary.image | relative_url }}" alt="{{ entry.supplementary.alt | default: '' }}" />
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if entry.supplementary.caption %}
+            <div class="timeline-supp-caption">{{ entry.supplementary.caption | markdownify }}</div>
+          {% endif %}
+        </div>
         {% endif %}
-        <div class="timeline-content">
-          <div class="timeline-date">{{ entry.date }}</div>
-          <div class="timeline-text">{{ entry.content | markdownify }}</div>
         </div>
-        </div>
+        {% assign entry_index = entry_index | plus: 1 %}
         {% endif %}
       {% endfor %}
     </div>
@@ -46,7 +70,7 @@
   }
 
   .timeline.scrollable {
-    max-height: 400px;
+    max-height: 600px;
     overflow-y: auto;
     padding-right: 1rem;
   }
@@ -58,7 +82,8 @@
   .timeline-content-wrapper::before {
     content: '';
     position: absolute;
-    left: 19px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
     bottom: 0;
     width: 2px;
@@ -67,14 +92,49 @@
 
   .timeline-item {
     position: relative;
-    margin-bottom: 1.5rem;
-    padding-left: 0;
-    margin-left: 60px;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    min-height: 1px;
+  }
+
+  /* Left-aligned items: main content on left, supplementary on right */
+  .timeline-item-left .timeline-main {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+    padding-right: 2rem;
+  }
+
+  .timeline-item-left .timeline-supplementary {
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 2rem;
+  }
+
+  /* Right-aligned items: supplementary on left, main content on right */
+  .timeline-item-right .timeline-main {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .timeline-item-right .timeline-supplementary {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+    padding-right: 2rem;
+  }
+
+  .timeline-main {
+    position: relative;
   }
 
   .timeline-marker {
     position: absolute;
-    left: -1.5rem;
     top: 0.25rem;
     width: 12px;
     height: 12px;
@@ -84,11 +144,18 @@
     z-index: 1;
   }
 
+  .timeline-item-left .timeline-marker {
+    right: -8px;
+  }
+
+  .timeline-item-right .timeline-marker {
+    left: -8px;
+  }
+
   .timeline-marker-icon {
     position: absolute;
     width: 38px;
     height: 38px;
-    left: -60px;
     top: 0;
     border-radius: 6px;
     background: var(--global-bg-color);
@@ -97,6 +164,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .timeline-item-left .timeline-marker-icon {
+    right: -21px;
+  }
+
+  .timeline-item-right .timeline-marker-icon {
+    left: -21px;
   }
 
   .timeline-marker-icon img {
@@ -109,7 +184,6 @@
     position: absolute;
     width: 38px;
     height: 38px;
-    left: -60px;
     top: 0;
     border-radius: 50%;
     background: var(--global-bg-color);
@@ -118,6 +192,14 @@
     align-items: center;
     justify-content: center;
     font-size: 22px;
+  }
+
+  .timeline-item-left .timeline-marker-emoji {
+    right: -21px;
+  }
+
+  .timeline-item-right .timeline-marker-emoji {
+    left: -21px;
   }
 
   .timeline-date {
@@ -138,5 +220,84 @@
 
   .timeline-text p:last-child {
     margin-bottom: 0;
+  }
+
+  .timeline-supplementary {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .timeline-supp-image {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--global-divider-color);
+  }
+
+  .timeline-supp-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.2s;
+  }
+
+  .timeline-supp-image a:hover img {
+    transform: scale(1.02);
+  }
+
+  .timeline-supp-caption {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+    font-style: italic;
+  }
+
+  .timeline-supp-caption p {
+    margin-bottom: 0.25rem;
+  }
+
+  .timeline-supp-caption p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .timeline-content-wrapper::before {
+      left: 19px;
+      transform: none;
+    }
+
+    .timeline-item {
+      display: block;
+      margin-left: 60px;
+    }
+
+    .timeline-item-left .timeline-main,
+    .timeline-item-right .timeline-main {
+      text-align: left;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .timeline-item-left .timeline-marker,
+    .timeline-item-right .timeline-marker {
+      left: -1.5rem;
+      right: auto;
+    }
+
+    .timeline-item-left .timeline-marker-icon,
+    .timeline-item-right .timeline-marker-icon,
+    .timeline-item-left .timeline-marker-emoji,
+    .timeline-item-right .timeline-marker-emoji {
+      left: -60px;
+      right: auto;
+    }
+
+    .timeline-item-left .timeline-supplementary,
+    .timeline-item-right .timeline-supplementary {
+      margin-top: 1rem;
+      text-align: left;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 </style>
