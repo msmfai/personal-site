@@ -23,8 +23,8 @@ cv:
         highlights:
           - Developed novel neural network architectures for real-time generative systems, demonstrating order-of-magnitude improvements over existing methods (99% memory reduction, 95% register pressure reduction, 20% ALU cost reduction) while improving output quality
           - Technical lead for LLM integration in real-time interactive systems, driving architecture design, fine-tuning methodologies, and evaluation frameworks across research and production teams
-          - Led cross-functional research into dynamic content generation systems that maintain game design integrity and player agency, with full ownership from conceptualization to prototype
-          - Solved fundamental rendering challenges by applying physics and materials science domain expertise to production constraints
+          - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to prototype
+          - Solved long standing mathematical problem in sparse rendering through transfer of materials science expertise
           - Authored and drove adoption of technical strategy for LLM integration in stable, completable game experiences, leading principals and senior staff
           - Established novel workflows enabling creative agency in AI-assisted content pipelines
 
