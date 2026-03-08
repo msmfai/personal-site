@@ -7,3 +7,18 @@
 
 "Vision":
   color: "#009f36"
+
+"Digit. Discov.":
+  url: https://pubs.rsc.org/en/journals/journalissues/dd
+  color: "#17a2b8"
+
+"npj Comput. Mater.":
+  url: https://www.nature.com/npjcompumats/
+  color: "#0066cc"
+
+"Angew. Chem.":
+  url: https://onlinelibrary.wiley.com/journal/15213773
+  color: "#8b1538"
+
+"PhD Thesis":
+  color: "#6f42c1"
