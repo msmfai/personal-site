@@ -20,7 +20,7 @@
 - date: "September 2024"
   emoji: "🎓"
   content: |
-    Completed PhD in Deep Learning for Materials Science at University of Liverpool. Published 4 papers in top-tier journals including Digital Discovery, npj Computational Materials, and Angewandte Chemie.
+    Completed PhD at University of Liverpool. Thesis: [*An information oriented approach to materials informatics*](https://livrepository.liverpool.ac.uk/3193136/). Published 4 papers in top-tier journals including Digital Discovery, npj Computational Materials, and Angewandte Chemie.
 
 - date: "February 2024"
   icon: "user_assets/SMF-Logo.png"
@@ -56,7 +56,7 @@
 - date: "October 2019"
   emoji: "🎓"
   content: |
-    Started PhD at University of Liverpool, Materials Innovation Factory, focusing on novel transformer architectures and representation learning for materials science.
+    Started PhD at University of Liverpool, Materials Innovation Factory. Thesis: [*An information oriented approach to materials informatics*](https://livrepository.liverpool.ac.uk/3193136/).
   supplementary:
     image: "user_assets/MIF.jpeg"
     link: "https://www.liverpool.ac.uk/materials-innovation-factory/"
