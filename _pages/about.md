@@ -29,6 +29,4 @@ timeline:
   limit: 10 # number of timeline items to show
 ---
 
-Welcome! I'm Dr. Marin Moran, an AI Research Scientist exploring the frontiers of artificial intelligence.
-
-This site showcases my research, publications, and projects in AI. Feel free to explore and get in touch.
+Welcome to my space! I'm Marin. I do AI, physics, and rendering research at Electronic Arts SEED, mostly real-time generative AI and LLMs to see what we can do now that we wouldn't do before. I started in academic physics pivoting into AI with my PhD on transformer architectures for materials science, which was surprisingly transferable to graphics. Outside EA, I consult on AI ethics and RLVR for developing frontier model scientific capabilities through my firm Solomonoff Consultancy.
