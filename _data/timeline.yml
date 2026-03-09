@@ -3,9 +3,9 @@
 # If neither is specified, a default marker will be used
 
 - date: "January 2026"
-  emoji: "🎤"
+  icon: "user_assets/SMF-Logo.png"
   content: |
-    Partnered with the Faraday Institute for Science and Technology to deliver a 2-day seminar on AI ethics and the limits of optimisation.
+    Partnered with the Faraday Institute for Science and Technology to deliver a 2-day seminar on AI ethics and the boundary between what can be optimised, and what must be a human choice.
   supplementary:
     image: "user_assets/faraday.jpeg"
     link: "https://www.faraday.cam.ac.uk/"
