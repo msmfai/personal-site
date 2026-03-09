@@ -2,7 +2,7 @@
 # Each entry can have an optional icon (image path) or emoji (single character/emoji)
 # If neither is specified, a default marker will be used
 
-- date: "January 2025"
+- date: "January 2026"
   emoji: "🎤"
   content: |
     Partnered with the Faraday Institute for Science and Technology to deliver a 2-day seminar on AI ethics and the limits of optimisation.
