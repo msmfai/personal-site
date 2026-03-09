@@ -3,6 +3,16 @@
 # If neither is specified, a default marker will be used
 
 - date: "January 2025"
+  emoji: "🎤"
+  content: |
+    Partnered with the Faraday Institute for Science and Technology to deliver a 2-day seminar on AI ethics and the limits of optimisation.
+  supplementary:
+    image: "user_assets/faraday.jpeg"
+    link: "https://www.faraday.cam.ac.uk/"
+    alt: "Delivering a seminar at the Faraday Institute for Science and Technology"
+    caption: "[The Faraday Institute for Science and Technology](https://www.faraday.cam.ac.uk/)"
+
+- date: "January 2025"
   emoji: "📄"
   content: |
     **Establishing Deep InfoMax as an effective self-supervised learning methodology in materials informatics** published in Digital Discovery. This work enabled representation learning on crystal structures without reconstruction, addressing the fundamental challenge that crystal graphs have heterogeneous topology with no canonical ordering, which makes standard autoencoder approaches intractable.
