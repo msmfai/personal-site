@@ -33,4 +33,4 @@ Welcome to my space! I'm Marin. I work on AI, physics, and rendering at Electron
 
 My background spans academic physics, materials science, and game development. The common thread is learning structure from unstructured data: point clouds, graphs, geometric relationships. I built transformer architectures for crystal structures during my PhD, and that same foundation applies to my work in the games industry.
 
-{% if site.show_consultancy %}Separately, I run Solomonoff Consultancy, working on AI safety and verification for scientific capabilities in frontier models. Open to select engagements outside the games industry, get in touch to discuss fit and availability.{% endif %}
+{% if site.show_consultancy %}Separately, I run Solomonoff Consultancy, working on AI ethics and RLVR for scientific capabilities in frontier models. Open to select engagements outside the games industry, get in touch to discuss fit and availability.{% endif %}
