@@ -29,7 +29,7 @@ timeline:
   limit: # number of timeline items to show
 ---
 
-I'm Marin. I build systems that extract structure from high-dimensional, unordered data. My work spans materials science (transformer architectures for aperiodic crystal graphs), real-time generative AI at Electronic Arts SEED, and scientific verification frameworks for frontier AI labs. The common thread is inference under uncertainty: learning what's invariant when the representation isn't canonical, and building systems robust enough to be trusted in production.
+I'm Marin. I build systems that extract structure from high-dimensional data with no canonical ordering. My work spans materials science (transformer architectures for periodic crystal graphs), real-time generative AI at Electronic Arts SEED, and scientific verification frameworks for frontier AI labs. The common thread is inference under uncertainty: learning what's invariant when the representation isn't canonical, and building systems robust enough to be trusted in production.
 
 My PhD developed **Site-Net** — a transformer architecture for crystal structures, where the input is an infinite periodic graph with no canonical ordering — and established **Deep InfoMax** as a self-supervised methodology for domains where reconstruction is intractable. The same principle (extracting representations invariant to nuisance symmetries) underlies my production work at SEED, where I now apply it to latency-critical generative systems.
 
