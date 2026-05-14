@@ -4,7 +4,7 @@ cv:
   location: Liverpool, UK
   image: ""
   summary: >-
-    I design and implement systems for learning structure from unstructured, high-symmetry data — transformer architectures, representation learning, and verification frameworks. My PhD developed architectures for learning invariant representations of physical systems with no canonical ordering, scaled across HPC clusters with custom CUDA kernels and distributed training. At Electronic Arts SEED, I apply the same principles to real-time generative AI in latency-critical systems, achieving order-of-magnitude memory and compute reductions in production. I advise frontier AI labs on evaluation frameworks for scientific reasoning — domains where ground truth is expensive to obtain and the evaluation framework is itself a research contribution. My background is in physics and information theory; my systems work spans CUDA, distributed HPC, and production deployment. I'm drawn to problems where correctness is hard to verify, where getting the structure right pays off everywhere downstream, and where insights from one field unlock progress in another.
+    I design and implement machine learning systems for structured but unordered data — transformer architectures, representation learning, and verification frameworks. My PhD developed architectures for learning invariant representations of physical systems with no canonical ordering, scaled across HPC clusters with custom CUDA kernels and distributed training. At Electronic Arts SEED, I work on real-time generative AI under frame-time budgets, with documented memory and compute reductions against deployed baselines. I advise frontier AI labs on evaluation frameworks for scientific reasoning — domains where ground truth is expensive to obtain and binary correctness is insufficient. My background is in computational physics and representation learning; my systems work spans CUDA, distributed HPC, and production deployment. I'm drawn to problems where correctness is hard to verify, where getting the structure right pays off everywhere downstream, and where insights from one field unlock progress in another.
 
   social_networks:
     - network: LinkedIn
@@ -19,12 +19,12 @@ cv:
         location: Remote, Global
         start_date: 2024-10
         end_date: present
-        summary: Real-time generative AI and LLM research in latency-critical systems
+        summary: Real-time generative AI and LLM research for AAA games
         highlights:
-          - Designed novel neural network architectures for real-time generative systems operating under hard latency budgets, achieving order-of-magnitude improvements (99% memory reduction, 95% register pressure reduction, 20% ALU cost reduction) with no loss of output quality
+          - Designed neural network architectures for real-time generative systems operating under frame-time budgets, with substantial improvements over deployed baselines (~99% memory reduction, ~95% register pressure reduction, ~20% ALU cost reduction) and no loss of output quality
           - Technical lead for LLM integration in real-time interactive systems — drove architecture design, fine-tuning methodology, and evaluation framework design across research and production teams
           - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to working prototype
-          - Solved a long-standing mathematical problem in sparse rendering by transferring representation-learning techniques from materials science
+          - Cross-applied a representation-learning technique from materials science to a problem in sparse rendering; results deployed in production
 
       - company: Solomonoff Consultancy
         position: Founder & Principal Consultant
@@ -33,7 +33,7 @@ cv:
         end_date: present
         summary: Boutique consultancy designing verification and evaluation frameworks for scientific reasoning in frontier AI systems
         highlights:
-          - "Evaluation framework design: Designed verification frameworks for scientific domains where ground truth is expensive to obtain and binary correctness is insufficient. Advise on constructing benchmarks that test whether models learn to do science, not just memorize it — the framework itself is a research contribution"
+          - "Evaluation framework design: Designed verification frameworks for scientific domains where ground truth is expensive to obtain and binary correctness is insufficient. Advise on constructing benchmarks that test whether models learn to do science, not just memorize it"
           - "Scientific AI training data: Lead design and delivery of PhD-level verification datasets for frontier AI models. Coordinated 100+ domain experts across physics, chemistry, and drug discovery; personally authored a substantial volume of expert-level challenges. Datasets now power frontier model capabilities"
           - "AI safety & alignment advisory: Provide strategic guidance on AI alignment and responsible deployment to frontier AI organizations. Translate philosophical and technical safety literature into actionable frameworks for production systems"
 
@@ -161,19 +161,18 @@ cv:
           - Perforce
 
     Interests:
-      - name: Quantitative Research Interests
-        keywords:
-          - Market microstructure
-          - Information theory (mutual information, entropy estimation)
-          - Network dynamics and complex systems
-          - Inference under uncertainty
-      - name: Philosophy & Ethics
-        keywords:
-          - Philosophy of technology
-          - Applied ethics and moral philosophy
-          - History of ideas
       - name: Creative Pursuits
         keywords:
           - Tabletop RPG design and community coordination
           - Vocal performance (classical and extended techniques)
           - Retro game development (6502 assembly for NES)
+      - name: Philosophy & Ethics
+        keywords:
+          - Philosophy of technology
+          - Applied ethics and moral philosophy
+          - History of ideas
+      - name: Quantitative Hobbies
+        keywords:
+          - Market microstructure
+          - Network dynamics
+          - Complex systems modeling
