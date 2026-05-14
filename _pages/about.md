@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Interdisciplinary researcher at the frontiers of entertainment
+subtitle: Learning structure from unstructured data — physics, machine learning, and real-time systems
 
 profile:
   align: right
@@ -29,8 +29,14 @@ timeline:
   limit: # number of timeline items to show
 ---
 
-Welcome to my space! I'm Marin. I work on AI, physics, and rendering at Electronic Arts SEED - more focused on exploration than exploitation, truly novel dynamic worlds that require a machine with common sense.
+I'm Marin. I build systems that extract structure from high-dimensional, unordered data. My work spans materials science (transformer architectures for aperiodic crystal graphs), real-time generative AI at Electronic Arts SEED, and scientific verification frameworks for frontier AI labs. The common thread is inference under uncertainty: learning what's invariant when the representation isn't canonical, and building systems robust enough to be trusted in production.
 
-My background spans academic physics, materials science, and game development. The common thread is learning structure from unstructured data: point clouds, graphs, geometric relationships. I built transformer architectures for crystal structures during my PhD, and that same foundation applies to my work in the games industry.
+My PhD developed **Site-Net** — a transformer architecture for crystal structures, where the input is an infinite periodic graph with no canonical ordering — and established **Deep InfoMax** as a self-supervised methodology for domains where reconstruction is intractable. The same principle (extracting representations invariant to nuisance symmetries) underlies my production work at SEED, where I now apply it to latency-critical generative systems.
 
-{% if site.show_consultancy %}Separately, I run Solomonoff Consultancy, working on AI ethics and RLVR for scientific capabilities in frontier models. Open to select engagements outside the games industry, get in touch to discuss fit and availability.{% endif %}
+I have a long-running interest in market microstructure and complex systems — domains where these questions have immediate, measurable consequences.
+
+{% if site.show_consultancy %}Separately, I run **Solomonoff Consultancy**, designing evaluation frameworks for scientific reasoning in frontier AI models — domains where ground truth is expensive to obtain and binary correctness is insufficient. Open to select engagements; get in touch to discuss fit.{% endif %}
+
+## Research interests
+
+Inference under uncertainty · invariant representations · information-theoretic learning · verification and evaluation design · real-time systems with hard latency budgets · market microstructure and complex systems.

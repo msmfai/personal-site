@@ -4,7 +4,7 @@ cv:
   location: Liverpool, UK
   image: ""
   summary: >-
-    I develop novel neural network architectures and deploy them in production systems. During my PhD, I created transformer frameworks for materials science and scaled them across HPC clusters using distributed training. At EA SEED, I work on real-time generative AI for games, achieving substantial performance improvements in production. I advise frontier AI labs on verification frameworks for scientific reasoning in language models and on AI safety and alignment strategies. My background spans physics, chemistry, philosophy, and systems engineering. I often find that insights from one field solve problems in another, whether applying materials science principles to game AI architectures or bringing philosophical frameworks to AI safety work. I see these connections and lead teams to implement them. When leading teams, I believe the best work happens when people feel safe asking questions and challenging assumptions.
+    I design and implement systems for learning structure from unstructured, high-symmetry data — transformer architectures, representation learning, and verification frameworks. My PhD developed architectures for learning invariant representations of physical systems with no canonical ordering, scaled across HPC clusters with custom CUDA kernels and distributed training. At Electronic Arts SEED, I apply the same principles to real-time generative AI in latency-critical systems, achieving order-of-magnitude memory and compute reductions in production. I advise frontier AI labs on evaluation frameworks for scientific reasoning — domains where ground truth is expensive to obtain and the evaluation framework is itself a research contribution. My background is in physics and information theory; my systems work spans CUDA, distributed HPC, and production deployment. I'm drawn to problems where correctness is hard to verify, where getting the structure right pays off everywhere downstream, and where insights from one field unlock progress in another.
 
   social_networks:
     - network: LinkedIn
@@ -19,36 +19,35 @@ cv:
         location: Remote, Global
         start_date: 2024-10
         end_date: present
-        summary: Leading real-time generative AI and LLM research for AAA games
+        summary: Real-time generative AI and LLM research in latency-critical systems
         highlights:
-          - Developed novel neural network architectures for real-time generative systems, demonstrating order-of-magnitude improvements over existing methods (99% memory reduction, 95% register pressure reduction, 20% ALU cost reduction) while improving output quality
-          - Technical lead for LLM integration in real-time interactive systems, driving architecture design, fine-tuning methodologies, and evaluation frameworks across research and production teams
-          - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to prototype
-          - Solved long standing mathematical problem in sparse rendering through transfer of materials science expertise
+          - Designed novel neural network architectures for real-time generative systems operating under hard latency budgets, achieving order-of-magnitude improvements (99% memory reduction, 95% register pressure reduction, 20% ALU cost reduction) with no loss of output quality
+          - Technical lead for LLM integration in real-time interactive systems — drove architecture design, fine-tuning methodology, and evaluation framework design across research and production teams
+          - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to working prototype
+          - Solved a long-standing mathematical problem in sparse rendering by transferring representation-learning techniques from materials science
 
       - company: Solomonoff Consultancy
         position: Founder & Principal Consultant
         location: Remote
         start_date: 2024-02
         end_date: present
-        summary: Boutique AI consultancy specializing in scientific AI systems and safety architecture for frontier AI labs, AI training data platforms, and AI-native companies
+        summary: Boutique consultancy designing verification and evaluation frameworks for scientific reasoning in frontier AI systems
         highlights:
-          - "Scientific AI Training: Lead design and delivery of PhD-level verification datasets for frontier AI models. Coordinated 100+ domain experts across physics, chemistry, and drug discovery; personally authored substantial volume of expert-level challenges. Delivered datasets now powering frontier model capabilities"
-          - "AI Safety & Ethics Advisory: Provide strategic guidance on AI alignment and responsible deployment to frontier AI organizations. Translated philosophical and technical safety literature into actionable frameworks for production systems"
-          - "Verifiable AI Systems: Design verification frameworks for scientific domains where expertise is implicit and evaluation extends beyond binary correctness. Advise on constructing benchmarks that test whether models learn to do science, not just memorize it"
+          - "Evaluation framework design: Designed verification frameworks for scientific domains where ground truth is expensive to obtain and binary correctness is insufficient. Advise on constructing benchmarks that test whether models learn to do science, not just memorize it — the framework itself is a research contribution"
+          - "Scientific AI training data: Lead design and delivery of PhD-level verification datasets for frontier AI models. Coordinated 100+ domain experts across physics, chemistry, and drug discovery; personally authored a substantial volume of expert-level challenges. Datasets now power frontier model capabilities"
+          - "AI safety & alignment advisory: Provide strategic guidance on AI alignment and responsible deployment to frontier AI organizations. Translate philosophical and technical safety literature into actionable frameworks for production systems"
 
       - company: University of Liverpool, Materials Innovation Factory
         position: Post-Graduate Machine Learning Researcher
         location: Liverpool, UK
         start_date: 2019-10
         end_date: 2024-10
-        summary: Created novel transformer architectures and representation learning frameworks for materials science
+        summary: Architectures and representation learning for physical systems with no canonical ordering
         highlights:
-          - Created a novel transformer / graph architecture and representation for machine learning in the materials science / molecular domain with unstructured 3D data, respecting the underlying symmetry groups of the data
-          - Developed a novel representation learning framework for transformer / graph machine learning models in the materials science / molecular domain
-          - Collaborated on a locally hosted cloud service for the deployment of supervised models in the materials science / physics / chemistry domain
-          - Created bespoke data architectures to facilitate high throughput, distributed and multi-GPU training on linux HPC
-          - Scaled training of materials science transformer models across SLURM clusters using DeepSpeed, custom kernels and symmetry optimisations through PyTorch geometric
+          - Designed Site-Net (Digital Discovery, 2023) — transformer architecture for learning invariant representations of crystal structures, where the input is an infinite periodic graph with no canonical ordering. Combined global self-attention over real-space supercells with explicit symmetry-aware constraints to capture long-range interactions
+          - Established Deep InfoMax (Digital Discovery, 2025) — mutual information maximization between local and global representations — as an effective self-supervised methodology for domains where reconstruction-based approaches are intractable
+          - Scaled training across SLURM clusters using DeepSpeed, custom CUDA kernels, and symmetry-aware optimizations via PyTorch Geometric; built bespoke data architectures for high-throughput multi-GPU pipelines
+          - Co-built a locally hosted cloud service for deploying supervised materials-informatics models, used by the Materials Innovation Factory research group
 
       - company: Electronic Arts
         position: Physics Software Engineer (Internship)
@@ -162,18 +161,19 @@ cv:
           - Perforce
 
     Interests:
-      - name: Creative Pursuits
+      - name: Quantitative Research Interests
         keywords:
-          - Tabletop RPG design and community coordination
-          - Vocal performance (classical and extended techniques)
-          - Retro game development (6502 assembly for NES)
+          - Market microstructure
+          - Information theory (mutual information, entropy estimation)
+          - Network dynamics and complex systems
+          - Inference under uncertainty
       - name: Philosophy & Ethics
         keywords:
           - Philosophy of technology
           - Applied ethics and moral philosophy
           - History of ideas
-      - name: Quantitative Hobbies
+      - name: Creative Pursuits
         keywords:
-          - Market microstructure analysis
-          - Network dynamics
-          - Complex systems modeling
+          - Tabletop RPG design and community coordination
+          - Vocal performance (classical and extended techniques)
+          - Retro game development (6502 assembly for NES)
