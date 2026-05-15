@@ -117,8 +117,8 @@ cv:
         summary: Memory optimization and legacy code modernization for physics systems
         highlights:
           - Achieved significant memory optimizations through core data architecture redesign, reducing memory requirements by approximately 50% for typical workloads
-          - Developed in-app documentation improving accessibility of physics engine for non-specialist users
-          - Created AI-assisted code modernization pipeline for legacy codebase maintenance using neurosymbolic approaches
+          - Built an in-engine documentation interface that surfaced the physics system's internals to non-specialist developers across the studio
+          - Designed and shipped a production agentic system on GPT-3 for legacy codebase modernization, combining LLM-driven refactoring with symbolic verification to keep changes safe under deployment
 
 
     # ---- Education ----
