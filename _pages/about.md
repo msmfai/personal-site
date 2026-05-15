@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Learning structure from unstructured data — physics, machine learning, and real-time systems
+subtitle: AI research scientist with a chronic habit of cross-disciplinary work
 
 profile:
   align: right
@@ -29,8 +29,8 @@ timeline:
   limit: # number of timeline items to show
 ---
 
-I'm Marin, an AI research scientist at **Electronic Arts SEED** and principal of **Solomonoff Consultancy**. I work on machine learning for structured but unordered data: graphs, point clouds, geometric configurations.
+I'm Marin, and I'm one of those people who can't stop noticing when the same idea shows up in completely different fields. I do AI research; right now most of my time goes into two threads.
 
-At **SEED**, that means real-time generative AI for AAA games: transformer architectures designed to fit production frame-time budgets, with documented memory and compute reductions against deployed baselines.
+At **Electronic Arts SEED**, I work on real-time generative AI for AAA games. The fun question is how to fit a neural network into a production frame-time budget when standard architectures are an order of magnitude too expensive. Lots of CUDA. Lots of structure to exploit.
 
-{% if site.show_consultancy %}Through **Solomonoff**, it means designing evaluation frameworks for scientific reasoning in frontier AI models, in domains where ground truth is expensive to obtain and binary correctness is insufficient. Open to select engagements; get in touch to discuss fit.{% endif %}
+{% if site.show_consultancy %}Through **Solomonoff Consultancy**, I design evaluation frameworks for scientific reasoning in frontier AI models. The fun question there is the kind of correctness that doesn't reduce to a unit test: did the model actually learn to do chemistry, or did it just memorize the answer key? Coordinating a hundred-plus domain experts to find out is more fun than it has any right to be. Open to select engagements; get in touch to discuss fit.{% endif %}
