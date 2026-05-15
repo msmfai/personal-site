@@ -29,10 +29,8 @@ timeline:
   limit: # number of timeline items to show
 ---
 
-I'm Marin. I work on machine learning for structured but unordered data — graphs, point clouds, geometric configurations — across materials science, real-time games, and AI verification.
+I'm Marin — an AI research scientist at **Electronic Arts SEED** and principal of **Solomonoff Consultancy**. I work on machine learning for structured but unordered data: graphs, point clouds, geometric configurations.
 
-My PhD developed **Site-Net**, a transformer architecture for crystal structures with infinite periodic symmetry, and established **Deep InfoMax** (mutual-information-based self-supervised learning) as a methodology for domains where reconstruction-based SSL is intractable.
+At **SEED**, that means real-time generative AI for AAA games — transformer architectures designed to fit production frame-time budgets, with documented memory and compute reductions against deployed baselines.
 
-At **Electronic Arts SEED**, I work on real-time generative AI for AAA games — transformer architectures under frame-time budgets, with documented memory and compute reductions against deployed baselines.
-
-{% if site.show_consultancy %}Separately, I run **Solomonoff Consultancy**, designing evaluation frameworks for scientific reasoning in frontier AI models — domains where ground truth is expensive to obtain and binary correctness is insufficient. Open to select engagements; get in touch to discuss fit.{% endif %}
+{% if site.show_consultancy %}Through **Solomonoff**, it means designing evaluation frameworks for scientific reasoning in frontier AI models — domains where ground truth is expensive to obtain and binary correctness is insufficient. Open to select engagements; get in touch to discuss fit.{% endif %}
