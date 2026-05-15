@@ -21,7 +21,7 @@ cv:
         end_date: present
         summary: Real-time generative AI and LLM research for AAA games
         highlights:
-          - Designed neural network architectures for real-time generative systems operating under frame-time budgets, with substantial improvements over deployed baselines (~99% memory reduction, ~95% register pressure reduction, ~20% ALU cost reduction) and no loss of output quality
+          - Designed neural network architectures for real-time generative systems operating under production frame-time budgets, with substantial reductions in memory, register pressure, and ALU cost against deployed baselines and no loss of output quality
           - Technical lead for LLM integration in real-time interactive systems, driving architecture design, fine-tuning methodology, and evaluation framework design across research and production teams
           - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to working prototype
           - Cross-applied a representation-learning technique from materials science to a problem in sparse rendering; results deployed in production

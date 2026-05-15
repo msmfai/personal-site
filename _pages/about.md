@@ -31,6 +31,6 @@ timeline:
 
 I'm Marin. I do AI research, mostly at the intersection of fields that don't usually talk to each other. Right now most of my time goes into two threads.
 
-At **Electronic Arts SEED**, I work on real-time generative AI for AAA games. The problem is fitting a neural network into a production frame-time budget when standard architectures are an order of magnitude too expensive: a lot of CUDA, a lot of structure to exploit.
+At **Electronic Arts SEED**, I work on real-time generative AI for AAA games. The problem is fitting neural networks into a shipping game engine's frame-time budget: a lot of CUDA, a lot of structure to exploit.
 
 {% if site.show_consultancy %}Through **Solomonoff Consultancy**, I design evaluation frameworks for scientific reasoning in frontier AI models. The question is the kind of correctness that doesn't reduce to a unit test: did the model actually learn to do chemistry, or did it just memorize the answer key? Most of the work is coordinating expert teams to construct evaluations that genuinely test for understanding. Open to select engagements; get in touch to discuss fit.{% endif %}
