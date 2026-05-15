@@ -94,7 +94,7 @@ cv:
         summary: Boutique consultancy designing verification and evaluation frameworks for scientific reasoning in frontier AI systems
         highlights:
           - Designing verification frameworks for scientific domains where ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. Advise on and implement benchmarks that test whether models have learned to do science rather than memorize it
-          - Lead the design and delivery of PhD-level verification datasets for frontier AI models, coordinating 100+ domain experts across physics, chemistry, and drug discovery, and personally authoring a substantial volume of expert-level challenges. These datasets now power frontier model capabilities
+          - Led the design and delivery of PhD-level verification datasets for frontier AI models, coordinating 100+ domain experts across physics, chemistry, and drug discovery, and personally authoring a substantial volume of expert-level challenges. These datasets now power frontier model capabilities
           - Provide strategic guidance on AI alignment and responsible deployment to frontier AI organizations, translating philosophical and technical safety literature into actionable frameworks for production systems
 
       - company: University of Liverpool, Materials Innovation Factory
