@@ -29,8 +29,15 @@ timeline:
   limit: # number of timeline items to show
 ---
 
-I'm Marin. I do AI research, mostly at the intersection of fields that don't usually talk to each other.
+{% comment %}
+  The text for this page lives in _data/content.yml.
+  Open that file to edit the bio paragraphs.
+  Subtitle stays in the frontmatter above (YAML frontmatter is parsed
+  before data files are available).
+{% endcomment %}
 
-At **Electronic Arts SEED**, I work on real-time generative AI for AAA games. Fitting neural networks into a shipping game engine's frame-time budget involves as much low level optimisation work as research, where finding structure in the problem to achieve real time results is essential. Intersecting the technical with the creative, I ask what novel experiences can we create with AI that were not possible before?
+{{ site.data.content.about.intro }}
 
-{% if site.show_consultancy %}Through **Solomonoff Consultancy**, I primarily design and create evaluation frameworks for scientific reasoning in frontier AI models. The hard question is what good evaluation looks like when correctness can't be reduced to a unit test. Did the model actually learn to do physics, or did it just memorize the answer path? Open to select engagements, so get in touch if it sounds like a fit.{% endif %}
+{{ site.data.content.about.ea_seed }}
+
+{% if site.show_consultancy %}{{ site.data.content.about.solomonoff }}{% endif %}

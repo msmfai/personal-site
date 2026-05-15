@@ -3,8 +3,10 @@ cv:
   label: AI Research Leader & Technical Architect
   location: Liverpool, UK
   image: ""
-  summary: >-
-    I design and build machine learning systems for geometrically structured data such as graphs, point clouds, and atomic configurations, where the underlying symmetries actually matter. My PhD focused on symmetry-aware geometric deep learning, building invariant representations of physical systems and scaling the training across HPC clusters using custom CUDA kernels. I now work at Electronic Arts SEED on real-time generative AI that has to run within strict frame-time budgets, where I've achieved meaningful memory and compute reductions against deployed baselines. I also advise frontier AI labs on how to evaluate scientific reasoning in their models, which matters most when ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. My background is in computational physics and representation learning, and my systems work covers CUDA, distributed HPC, and production deployment. I'm drawn to problems where correctness is hard to verify and where ideas from one field can unlock advances in another.
+  # The "Professional Summary" paragraph rendered at /cv/ now lives in
+  # _data/content.yml (under `cv.summary`). The layout reads it from there
+  # and falls back here if absent. Leaving this comment so the next person
+  # editing this file knows where the text actually lives.
 
   social_networks:
     - network: LinkedIn

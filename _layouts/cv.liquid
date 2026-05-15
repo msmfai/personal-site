@@ -112,11 +112,12 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Summary -->
-        {% if cv.summary %}
+        <!-- Summary: prefer SSOT in _data/content.yml, fall back to cv.summary in _data/cv.yml -->
+        {% assign summary_text = site.data.content.cv.summary | default: cv.summary %}
+        {% if summary_text %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Professional Summary</h3>
-            <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            <p>{{ summary_text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
 

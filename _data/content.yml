@@ -1,0 +1,40 @@
+# =============================================================================
+# Single source of truth for the editable prose on the site.
+#
+# How to edit:
+#   * Open this file, find the block you want to change, change the text under
+#     it. Save. The site rebuilds automatically (refresh http://localhost:8081).
+#   * Each block starts with `key: |` and runs until the next un-indented key.
+#   * Keep the four-space indentation under `|` consistent on every line.
+#   * Markdown formatting works inside the blocks: **bold**, *italic*,
+#     [link text](https://example.com). So does Markdown punctuation.
+#   * Do not put a line that is exactly three dashes (---) inside a block.
+#   * One thing this file does NOT control: the subtitle on the homepage.
+#     That stays in _pages/about.md frontmatter (line beginning with
+#     "subtitle:"), because YAML frontmatter is parsed before this file
+#     is available. Single line of text, easy to edit there.
+# =============================================================================
+
+about:
+
+  # First paragraph of the homepage bio. Short opener, sets the frame.
+  intro: |
+    I'm Marin. I do AI research, mostly at the intersection of fields that don't usually talk to each other.
+
+  # Second paragraph. Electronic Arts SEED stream.
+  ea_seed: |
+    At **Electronic Arts SEED**, I work on real-time generative AI for AAA games. Fitting neural networks into a shipping game engine's frame-time budget involves as much low level optimisation work as research, where finding structure in the problem to achieve real time results is essential. Intersecting the technical with the creative, I ask what novel experiences can we create with AI that were not possible before?
+
+  # Third paragraph. Solomonoff Consultancy stream.
+  # Note: this paragraph is wrapped on the page in an {% if site.show_consultancy %} block,
+  # so it shows / hides depending on the `show_consultancy:` flag in _config.yml.
+  # The text below is just the paragraph itself, with no wrapping needed.
+  solomonoff: |
+    Through **Solomonoff Consultancy**, I primarily design and create evaluation frameworks for scientific reasoning in frontier AI models. The hard question is what good evaluation looks like when correctness can't be reduced to a unit test. Did the model actually learn to do physics, or did it just memorize the answer path? Open to select engagements, so get in touch if it sounds like a fit.
+
+
+cv:
+
+  # The professional-summary paragraph at the top of /cv/.
+  summary: |
+    I design and build machine learning systems for geometrically structured data such as graphs, point clouds, and atomic configurations, where the underlying symmetries actually matter. My PhD focused on symmetry-aware geometric deep learning, building invariant representations of physical systems and scaling the training across HPC clusters using custom CUDA kernels. I now work at Electronic Arts SEED on real-time generative AI that has to run within strict frame-time budgets, where I've achieved meaningful memory and compute reductions against deployed baselines. I also advise frontier AI labs on how to evaluate scientific reasoning in their models, which matters most when ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. My background is in computational physics and representation learning, and my systems work covers CUDA, distributed HPC, and production deployment. I'm drawn to problems where correctness is hard to verify and where ideas from one field can unlock advances in another.
