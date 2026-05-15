@@ -29,8 +29,8 @@ timeline:
   limit: # number of timeline items to show
 ---
 
-I'm Marin. I do AI research, mostly at the intersection of fields that don't usually talk to each other. Right now most of my time goes into two threads.
+I'm Marin. I do AI research, mostly at the intersection of fields that don't usually talk to each other. These days I split my time between two things.
 
-At **Electronic Arts SEED**, I work on real-time generative AI for AAA games. The problem is fitting neural networks into a shipping game engine's frame-time budget: a lot of CUDA, a lot of structure to exploit.
+At **Electronic Arts SEED**, I work on real-time generative AI for AAA games. Fitting neural networks into a shipping game engine's frame-time budget involves a lot of CUDA work and a fair amount of finding structure in the problem that you can take advantage of.
 
-{% if site.show_consultancy %}Through **Solomonoff Consultancy**, I design evaluation frameworks for scientific reasoning in frontier AI models. The question is the kind of correctness that doesn't reduce to a unit test: did the model actually learn to do chemistry, or did it just memorize the answer key? Most of the work is coordinating expert teams to construct evaluations that genuinely test for understanding. Open to select engagements; get in touch to discuss fit.{% endif %}
+{% if site.show_consultancy %}Through **Solomonoff Consultancy**, I design evaluation frameworks for scientific reasoning in frontier AI models. The hard question is what good evaluation looks like when correctness can't be reduced to a unit test. Did the model actually learn to do chemistry, or did it just memorize the answer key? Most of the work involves coordinating expert teams to construct evaluations that genuinely test for understanding. Open to select engagements, so get in touch if it sounds like a fit.{% endif %}

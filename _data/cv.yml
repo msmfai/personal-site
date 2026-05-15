@@ -4,7 +4,7 @@ cv:
   location: Liverpool, UK
   image: ""
   summary: >-
-    I design and implement machine learning systems for structured but unordered data: transformer architectures, representation learning, and verification frameworks. My PhD developed architectures for learning invariant representations of physical systems with no canonical ordering, scaled across HPC clusters with custom CUDA kernels and distributed training. At Electronic Arts SEED, I work on real-time generative AI under frame-time budgets, with documented memory and compute reductions against deployed baselines. I advise frontier AI labs on evaluation frameworks for scientific reasoning, in domains where ground truth is expensive to obtain and binary correctness is insufficient. My background is in computational physics and representation learning; my systems work spans CUDA, distributed HPC, and production deployment. I'm drawn to problems where correctness is hard to verify, where getting the structure right pays off everywhere downstream, and where insights from one field unlock progress in another.
+    I design and build machine learning systems that handle data without natural ordering, like graph structures, point clouds, and geometric configurations. My PhD focused on learning invariant representations of physical systems where no canonical ordering exists, which involved scaling training across HPC clusters using custom CUDA kernels. I now work at Electronic Arts SEED on real-time generative AI that has to run within strict frame-time budgets, where I've achieved meaningful memory and compute reductions against deployed baselines. I also advise frontier AI labs on how to evaluate scientific reasoning in their models, which matters most when ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. My background is in computational physics and representation learning, and my systems work covers CUDA, distributed HPC, and production deployment. I'm drawn to problems where correctness is hard to verify and where ideas from one field can unlock another.
 
   social_networks:
     - network: LinkedIn
@@ -24,7 +24,7 @@ cv:
           - Designed neural network architectures for real-time generative systems operating under production frame-time budgets, with substantial reductions in memory, register pressure, and ALU cost against deployed baselines and no loss of output quality
           - Technical lead for LLM integration in real-time interactive systems, driving architecture design, fine-tuning methodology, and evaluation framework design across research and production teams
           - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to working prototype
-          - Cross-applied a representation-learning technique from materials science to a problem in sparse rendering; results deployed in production
+          - Cross-applied a representation-learning technique from materials science to a problem in sparse rendering, with the results deployed in production
 
       - company: Solomonoff Consultancy
         position: Founder & Principal Consultant
@@ -33,9 +33,9 @@ cv:
         end_date: present
         summary: Boutique consultancy designing verification and evaluation frameworks for scientific reasoning in frontier AI systems
         highlights:
-          - "Evaluation framework design: Designed verification frameworks for scientific domains where ground truth is expensive to obtain and binary correctness is insufficient. Advise on constructing benchmarks that test whether models learn to do science, not just memorize it"
-          - "Scientific AI training data: Lead design and delivery of PhD-level verification datasets for frontier AI models. Coordinated 100+ domain experts across physics, chemistry, and drug discovery; personally authored a substantial volume of expert-level challenges. Datasets now power frontier model capabilities"
-          - "AI safety & alignment advisory: Provide strategic guidance on AI alignment and responsible deployment to frontier AI organizations. Translate philosophical and technical safety literature into actionable frameworks for production systems"
+          - Designed verification frameworks for scientific domains where ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. Advised clients on constructing benchmarks that test whether models have learned to do science rather than memorize it
+          - Lead the design and delivery of PhD-level verification datasets for frontier AI models, coordinating 100+ domain experts across physics, chemistry, and drug discovery, and personally authoring a substantial volume of expert-level challenges. These datasets now power frontier model capabilities
+          - Provide strategic guidance on AI alignment and responsible deployment to frontier AI organizations, translating philosophical and technical safety literature into actionable frameworks for production systems
 
       - company: University of Liverpool, Materials Innovation Factory
         position: Post-Graduate Machine Learning Researcher
@@ -44,9 +44,9 @@ cv:
         end_date: 2024-10
         summary: Architectures and representation learning for physical systems with no canonical ordering
         highlights:
-          - "Designed Site-Net (Digital Discovery, 2023): a transformer architecture for learning invariant representations of crystal structures, where the input is an infinite periodic graph with no canonical ordering. Combined global self-attention over real-space supercells with explicit symmetry-aware constraints to capture long-range interactions"
-          - "Established Deep InfoMax (Digital Discovery, 2025), which maximizes mutual information between local and global representations, as an effective self-supervised methodology for domains where reconstruction-based approaches are intractable"
-          - Scaled training across SLURM clusters using DeepSpeed, custom CUDA kernels, and symmetry-aware optimizations via PyTorch Geometric; built bespoke data architectures for high-throughput multi-GPU pipelines
+          - Designed Site-Net (Digital Discovery, 2023), a transformer architecture for learning invariant representations of crystal structures where the input is an infinite periodic graph with no canonical ordering. Combined global self-attention over real-space supercells with explicit symmetry-aware constraints to capture long-range interactions
+          - Established Deep InfoMax, which maximizes mutual information between local and global representations, as an effective self-supervised methodology for domains where reconstruction-based approaches are intractable (Digital Discovery, 2025)
+          - Scaled training across SLURM clusters using DeepSpeed, custom CUDA kernels, and symmetry-aware optimizations via PyTorch Geometric, and built bespoke data architectures for high-throughput multi-GPU pipelines
           - Co-built a locally hosted cloud service for deploying supervised materials-informatics models, used by the Materials Innovation Factory research group
 
       - company: Electronic Arts
@@ -69,7 +69,7 @@ cv:
         start_date: 2019-10
         end_date: 2024-09
         highlights:
-          - "Thesis: [An information oriented approach to materials informatics](https://livrepository.liverpool.ac.uk/3193136/)"
+          - "Doctoral thesis, [An information oriented approach to materials informatics](https://livrepository.liverpool.ac.uk/3193136/)"
           - Published 4 papers in top-tier journals (Digital Discovery, npj Computational Materials, Angewandte Chemie)
 
       - institution: University of Liverpool
