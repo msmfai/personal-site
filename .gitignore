@@ -13,3 +13,6 @@ assets/rendercv/rendercv_output/*.typ
 Gemfile.lock
 node_modules/
 vendor
+
+# Resume build intermediates (final PDF/DOCX in assets/resume/ are committed)
+build/

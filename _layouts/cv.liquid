@@ -17,6 +17,22 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {{ page.title }}
+      {% if page.cv_docx %}
+        <a
+          {% if page.cv_docx contains '://' %}
+            href="{{ page.cv_docx }}"
+          {% else %}
+            href="{{ page.cv_docx | relative_url }}"
+          {% endif %}
+          download
+          rel="noopener noreferrer"
+          class="float-right"
+          title="Download resume as DOCX"
+          aria-label="Download resume as DOCX"
+        >
+          <i class="fa-solid fa-file-word"></i>
+        </a>
+      {% endif %}
       {% if page.cv_pdf %}
         <a
           {% if page.cv_pdf contains '://' %}
@@ -27,6 +43,8 @@ layout: default
           target="_blank"
           rel="noopener noreferrer"
           class="float-right"
+          title="Open resume as PDF"
+          aria-label="Open resume as PDF"
         >
           <i class="fa-solid fa-file-pdf"></i>
         </a>
