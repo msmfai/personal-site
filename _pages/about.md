@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: AI, physics, and rendering research scientist 
+subtitle: # text lives in _data/content.yml under about.subtitle
 
 profile:
   align: right
@@ -30,10 +30,8 @@ timeline:
 ---
 
 {% comment %}
-  The text for this page lives in _data/content.yml.
-  Open that file to edit the bio paragraphs.
-  Subtitle stays in the frontmatter above (YAML frontmatter is parsed
-  before data files are available).
+  All editable text for this page (subtitle + bio paragraphs) lives in
+  _data/content.yml. Open that file to change what the page says.
 {% endcomment %}
 
 {{ site.data.content.about.intro }}

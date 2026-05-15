@@ -9,13 +9,12 @@
 #   * Markdown formatting works inside the blocks: **bold**, *italic*,
 #     [link text](https://example.com). So does Markdown punctuation.
 #   * Do not put a line that is exactly three dashes (---) inside a block.
-#   * One thing this file does NOT control: the subtitle on the homepage.
-#     That stays in _pages/about.md frontmatter (line beginning with
-#     "subtitle:"), because YAML frontmatter is parsed before this file
-#     is available. Single line of text, easy to edit there.
 # =============================================================================
 
 about:
+
+  # The tagline shown under the page title on the homepage. One line.
+  subtitle: AI, physics, and rendering research scientist
 
   # First paragraph of the homepage bio. Short opener, sets the frame.
   intro: |
