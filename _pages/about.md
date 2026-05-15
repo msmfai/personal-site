@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: AI research scientist with a chronic habit of cross-disciplinary work
+subtitle: AI, physics, and rendering research scientist 
 
 profile:
   align: right
@@ -29,8 +29,8 @@ timeline:
   limit: # number of timeline items to show
 ---
 
-I'm Marin. I do AI research, mostly at the intersection of fields that don't usually talk to each other. These days I split my time between two things.
+I'm Marin. I do AI research, mostly at the intersection of fields that don't usually talk to each other.
 
-At **Electronic Arts SEED**, I work on real-time generative AI for AAA games. Fitting neural networks into a shipping game engine's frame-time budget involves a lot of CUDA work and a fair amount of finding structure in the problem that you can take advantage of.
+At **Electronic Arts SEED**, I work on real-time generative AI for AAA games. Fitting neural networks into a shipping game engine's frame-time budget involves as much low level optimisation work as research, where finding structure in the problem to achieve real time results is essential. Intersecting the technical with the creative, I ask what novel experiences can we create with AI that were not possible before?
 
-{% if site.show_consultancy %}Through **Solomonoff Consultancy**, I design evaluation frameworks for scientific reasoning in frontier AI models. The hard question is what good evaluation looks like when correctness can't be reduced to a unit test. Did the model actually learn to do chemistry, or did it just memorize the answer key? This is end-to-end work for me. I write the questions, design the evaluations around them, and work directly with the frontier labs on what the results mean for their training. Open to select engagements, so get in touch if it sounds like a fit.{% endif %}
+{% if site.show_consultancy %}Through **Solomonoff Consultancy**, I primarily design and create evaluation frameworks for scientific reasoning in frontier AI models. The hard question is what good evaluation looks like when correctness can't be reduced to a unit test. Did the model actually learn to do physics, or did it just memorize the answer path? Open to select engagements, so get in touch if it sounds like a fit.{% endif %}

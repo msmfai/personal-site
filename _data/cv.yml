@@ -4,7 +4,7 @@ cv:
   location: Liverpool, UK
   image: ""
   summary: >-
-    I design and build machine learning systems that handle data without natural ordering, like graph structures, point clouds, and geometric configurations. My PhD focused on learning invariant representations of physical systems where no canonical ordering exists, which involved scaling training across HPC clusters using custom CUDA kernels. I now work at Electronic Arts SEED on real-time generative AI that has to run within strict frame-time budgets, where I've achieved meaningful memory and compute reductions against deployed baselines. I also advise frontier AI labs on how to evaluate scientific reasoning in their models, which matters most when ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. My background is in computational physics and representation learning, and my systems work covers CUDA, distributed HPC, and production deployment. I'm drawn to problems where correctness is hard to verify and where ideas from one field can unlock another.
+    I design and build machine learning systems that handle data without natural ordering, like graph structures, point clouds, and geometric configurations. My PhD focused on learning invariant representations of physical systems where no canonical ordering exists, which involved scaling training across HPC clusters using custom CUDA kernels. I now work at Electronic Arts SEED on real-time generative AI that has to run within strict frame-time budgets, where I've achieved meaningful memory and compute reductions against deployed baselines. I also advise frontier AI labs on how to evaluate scientific reasoning in their models, which matters most when ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. My background is in computational physics and representation learning, and my systems work covers CUDA, distributed HPC, and production deployment. I'm drawn to problems where correctness is hard to verify and where ideas from one field can unlock advances in another.
 
   social_networks:
     - network: LinkedIn
@@ -24,7 +24,7 @@ cv:
           - Designed neural network architectures for real-time generative systems operating under production frame-time budgets, with substantial reductions in memory, register pressure, and ALU cost against deployed baselines and no loss of output quality
           - Technical lead for LLM integration in real-time interactive systems, driving architecture design, fine-tuning methodology, and evaluation framework design across research and production teams
           - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to working prototype
-          - Cross-applied a representation-learning technique from materials science to a problem in sparse rendering, with the results deployed in production
+          - Solved a 50 year old problem in sparse rendering by bringing over machinery from the physics of glass (SIGGRAPH ASIA 2026)
 
       - company: Solomonoff Consultancy
         position: Founder & Principal Consultant
@@ -33,7 +33,7 @@ cv:
         end_date: present
         summary: Boutique consultancy designing verification and evaluation frameworks for scientific reasoning in frontier AI systems
         highlights:
-          - Designed verification frameworks for scientific domains where ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. Advised clients on constructing benchmarks that test whether models have learned to do science rather than memorize it
+          - Designing verification frameworks for scientific domains where ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. Advise on and implement benchmarks that test whether models have learned to do science rather than memorize it
           - Lead the design and delivery of PhD-level verification datasets for frontier AI models, coordinating 100+ domain experts across physics, chemistry, and drug discovery, and personally authoring a substantial volume of expert-level challenges. These datasets now power frontier model capabilities
           - Provide strategic guidance on AI alignment and responsible deployment to frontier AI organizations, translating philosophical and technical safety literature into actionable frameworks for production systems
 
