@@ -49,16 +49,25 @@ layout: default
         {% assign render_jsonresume = true %}
       {% else %}
         {% comment %} Legacy behavior: RenderCV takes priority if both exist {% endcomment %}
-        {% if site.data.cv and site.data.cv.cv %}
+        {% if site.data.content and site.data.content.cv %}
+          {% assign render_rendercv = true %}
+        {% elsif site.data.cv and site.data.cv.cv %}
           {% assign render_rendercv = true %}
         {% elsif site.data.resume %}
           {% assign render_jsonresume = true %}
         {% endif %}
       {% endif %}
 
-      {% if render_rendercv and site.data.cv and site.data.cv.cv %}
-        {% comment %} RenderCV format {% endcomment %}
+      {% comment %} Resolve RenderCV data: prefer SSOT (_data/content.yml -> cv), fall back to _data/cv.yml -> cv {% endcomment %}
+      {% assign cv = nil %}
+      {% if site.data.content and site.data.content.cv %}
+        {% assign cv = site.data.content.cv %}
+      {% elsif site.data.cv and site.data.cv.cv %}
         {% assign cv = site.data.cv.cv %}
+      {% endif %}
+
+      {% if render_rendercv and cv %}
+        {% comment %} RenderCV format {% endcomment %}
 
         <!-- Header/Contact Information -->
         {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
@@ -112,12 +121,11 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Summary: prefer SSOT in _data/content.yml, fall back to cv.summary in _data/cv.yml -->
-        {% assign summary_text = site.data.content.cv.summary | default: cv.summary %}
-        {% if summary_text %}
+        <!-- Summary -->
+        {% if cv.summary %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Professional Summary</h3>
-            <p>{{ summary_text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
 

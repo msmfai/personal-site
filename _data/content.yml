@@ -1,22 +1,34 @@
 # =============================================================================
-# Single source of truth for the editable prose on the site.
+# Single source of truth for editable site content.
+#
+# Two top-level keys:
+#   about: drives the homepage (/) — subtitle and three bio paragraphs.
+#   cv:    drives the CV page (/cv/) — identity, summary, experience,
+#          education, skills, interests, and social links.
 #
 # How to edit:
-#   * Open this file, find the block you want to change, change the text under
-#     it. Save. The site rebuilds automatically (refresh http://localhost:8081).
-#   * Each block starts with `key: |` and runs until the next un-indented key.
-#   * Keep the four-space indentation under `|` consistent on every line.
-#   * Markdown formatting works inside the blocks: **bold**, *italic*,
-#     [link text](https://example.com). So does Markdown punctuation.
+#   * Open this file, find the block you want to change, edit the text
+#     underneath. Save. The site rebuilds automatically (refresh the page).
+#   * Long prose blocks use `key: |` followed by indented text. Keep the
+#     four-space indentation consistent on every continuation line.
+#   * Lists use `- ` for each item.
+#   * Markdown formatting works inside prose blocks: **bold**, *italic*,
+#     [link text](https://example.com).
 #   * Do not put a line that is exactly three dashes (---) inside a block.
+#   * Dates use YYYY-MM (e.g. 2024-10) or the word `present`.
 # =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# Homepage (/)
+# -----------------------------------------------------------------------------
 
 about:
 
-  # The tagline shown under the page title on the homepage. One line.
+  # Tagline shown under the page title on the homepage. One line.
   subtitle: AI, physics, and rendering research scientist
 
-  # First paragraph of the homepage bio. Short opener, sets the frame.
+  # First paragraph of the homepage bio. Short opener.
   intro: |
     I'm Marin. I do AI research, mostly at the intersection of fields that don't usually talk to each other.
 
@@ -25,15 +37,213 @@ about:
     At **Electronic Arts SEED**, I work on real-time generative AI for AAA games. Fitting neural networks into a shipping game engine's frame-time budget involves as much low level optimisation work as research, where finding structure in the problem to achieve real time results is essential. Intersecting the technical with the creative, I ask what novel experiences can we create with AI that were not possible before?
 
   # Third paragraph. Solomonoff Consultancy stream.
-  # Note: this paragraph is wrapped on the page in an {% if site.show_consultancy %} block,
+  # Note: this paragraph is wrapped on the page in {% if site.show_consultancy %}
   # so it shows / hides depending on the `show_consultancy:` flag in _config.yml.
-  # The text below is just the paragraph itself, with no wrapping needed.
+  # The text here is just the paragraph; no Liquid wrapping needed.
   solomonoff: |
     Through **Solomonoff Consultancy**, I primarily design and create evaluation frameworks for scientific reasoning in frontier AI models. The hard question is what good evaluation looks like when correctness can't be reduced to a unit test. Did the model actually learn to do physics, or did it just memorize the answer path? Open to select engagements, so get in touch if it sounds like a fit.
 
 
+# -----------------------------------------------------------------------------
+# CV page (/cv/)
+# -----------------------------------------------------------------------------
+
 cv:
 
-  # The professional-summary paragraph at the top of /cv/.
+  # ---- Identity (top of the CV) ----
+  name: Dr. Marin Moran
+  label: AI Research Leader & Technical Architect
+  location: Liverpool, UK
+  image: ""
+
+  # ---- Professional summary paragraph (top of the CV) ----
   summary: |
-    I design and build machine learning systems for geometrically structured data such as graphs, point clouds, and atomic configurations, where the underlying symmetries actually matter. My PhD focused on symmetry-aware geometric deep learning, building invariant representations of physical systems and scaling the training across HPC clusters using custom CUDA kernels. I now work at Electronic Arts SEED on real-time generative AI that has to run within strict frame-time budgets, where I've achieved meaningful memory and compute reductions against deployed baselines. I also advise frontier AI labs on how to evaluate scientific reasoning in their models, which matters most when ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. My background is in computational physics and representation learning, and my systems work covers CUDA, distributed HPC, and production deployment. I'm drawn to problems where correctness is hard to verify and where ideas from one field can unlock advances in another.
+    I design and build machine learning systems for geometrically structured data such as graphs, point clouds, and atomic configurations, where the underlying symmetries are key to reliable neural systems. My PhD focused on symmetry-aware geometric deep learning, building invariant representations of physical systems and scaling the training across HPC clusters using custom CUDA kernels. I now work at Electronic Arts SEED on real-time generative AI that has to run within strict frame-time budgets, alongside combining my technical expertise with creative vision to pioneer new experiences. I also advise frontier AI labs on how to evaluate scientific reasoning in their models, which matters most when ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. I'm drawn to problems where correctness is hard to verify and where ideas from one field can unlock advances in another.
+
+  # ---- Social profiles linked at the bottom of the CV ----
+  social_networks:
+    - network: LinkedIn
+      username: marin-moran
+    - network: GitHub
+      username: msmfai
+
+
+  # ---- CV sections, in render order ----
+  sections:
+
+    # ---- Experience: most recent first ----
+    Experience:
+
+      - company: Electronic Arts (SEED)
+        position: AI, Physics, and Rendering Research Scientist
+        location: Remote, Global
+        start_date: 2024-10
+        end_date: present
+        summary: Real-time generative AI and LLM research for AAA games
+        highlights:
+          - Designed novel neural network architectures for real-time generative systems operating under production frame-time budgets, with substantial reductions in memory, register pressure, and ALU cost against deployed baselines and no loss of output quality
+          - Technical lead for LLM integration in real-time interactive systems, driving architecture design, fine-tuning methodology, and evaluation framework design across research and production teams
+          - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to working prototype
+          - Solved a 50 year old problem in sparse rendering by bringing over machinery from the physics of glass (SIGGRAPH ASIA 2026)
+
+      - company: Solomonoff Consultancy
+        position: Founder & Principal Consultant
+        location: Remote
+        start_date: 2024-02
+        end_date: present
+        summary: Boutique consultancy designing verification and evaluation frameworks for scientific reasoning in frontier AI systems
+        highlights:
+          - Designing verification frameworks for scientific domains where ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. Advise on and implement benchmarks that test whether models have learned to do science rather than memorize it
+          - Lead the design and delivery of PhD-level verification datasets for frontier AI models, coordinating 100+ domain experts across physics, chemistry, and drug discovery, and personally authoring a substantial volume of expert-level challenges. These datasets now power frontier model capabilities
+          - Provide strategic guidance on AI alignment and responsible deployment to frontier AI organizations, translating philosophical and technical safety literature into actionable frameworks for production systems
+
+      - company: University of Liverpool, Materials Innovation Factory
+        position: Post-Graduate Machine Learning Researcher
+        location: Liverpool, UK
+        start_date: 2019-10
+        end_date: 2024-10
+        summary: Symmetry-aware geometric deep learning for physical systems
+        highlights:
+          - Designed Site-Net (Digital Discovery, 2023), a transformer architecture for learning invariant representations of crystal structures where the input is an infinite periodic graph with no canonical ordering. Combined global self-attention over real-space supercells with explicit symmetry-aware constraints to capture long-range interactions
+          - Established Deep InfoMax, which maximizes mutual information between local and global representations, as an effective self-supervised methodology for domains where reconstruction-based approaches are intractable (Digital Discovery, 2025)
+          - Scaled training across SLURM clusters using DeepSpeed, custom CUDA kernels, and symmetry-aware optimizations via PyTorch Geometric, and built bespoke data architectures for high-throughput multi-GPU pipelines
+          - Co-built a locally hosted cloud service for deploying supervised materials-informatics models, used by the Materials Innovation Factory research group
+
+      - company: Electronic Arts
+        position: Physics Software Engineer (Internship)
+        location: Guildford, UK
+        start_date: 2023-09
+        end_date: 2024-03
+        summary: Memory optimization and legacy code modernization for physics systems
+        highlights:
+          - Achieved significant memory optimizations through core data architecture redesign, reducing memory requirements by approximately 50% for typical workloads
+          - Developed in-app documentation improving accessibility of physics engine for non-specialist users
+          - Created AI-assisted code modernization pipeline for legacy codebase maintenance using neurosymbolic approaches
+
+
+    # ---- Education ----
+    Education:
+
+      - institution: University of Liverpool
+        location: Liverpool, UK
+        url: https://www.liverpool.ac.uk/
+        area: Deep Learning for Materials Science
+        studyType: PhD
+        start_date: 2019-10
+        end_date: 2024-09
+        highlights:
+          - "Doctoral thesis, [An information oriented approach to materials informatics](https://livrepository.liverpool.ac.uk/3193136/)"
+          - Published 4 papers in top-tier journals (Digital Discovery, npj Computational Materials, Angewandte Chemie)
+
+      - institution: University of Liverpool
+        location: Liverpool, UK
+        area: Physics
+        studyType: Integrated Masters (First Class Honours)
+        start_date: 2015-09
+        end_date: 2019-05
+        highlights:
+          - First Class Honours
+          - Focus on computational physics and machine learning applications
+
+
+    # ---- Skills: each block has a label and a list of keywords ----
+    Skills:
+
+      - label: Languages & Frameworks
+        keywords:
+          - Python
+          - C++
+          - MATLAB
+          - C#
+          - Java
+          - CUDA
+          - JavaScript
+          - PyTorch (Lightning)
+          - TensorFlow/Keras
+          - JAX
+          - Scikit-learn
+          - PyTorch Geometric
+          - Hugging Face
+          - DeepSpeed
+          - NumPy
+          - Pandas
+          - SciPy
+          - Ray
+          - XGBoost
+          - ONNX
+
+      - label: AI/ML Specializations
+        keywords:
+          - Large Language Models
+          - Transformer Architectures
+          - Deep Learning
+          - Representation Learning
+          - Generative AI (Diffusion Models, VAEs, GANs)
+          - Graph Neural Networks
+          - Geometric Deep Learning
+          - Contrastive Learning
+          - Neural NLP
+          - Computer Vision
+
+      - label: Systems & Infrastructure
+        keywords:
+          - HPC (SLURM)
+          - Distributed Training
+          - GPU Compute (CUDA Kernels)
+          - OpenMP
+          - Graphics Programming (HLSL, GLSL)
+          - Real-time Physics Simulation
+          - Game Engines (Unreal, Frostbite, Unity)
+          - Docker
+          - Singularity
+          - MLOps
+          - Azure
+          - Full Stack Development
+          - Agentic Systems
+          - MongoDB
+          - SQLite
+          - HDF5
+
+      - label: Domain Expertise
+        keywords:
+          - Materials Science
+          - DFT (Density Functional Theory)
+          - Molecular Dynamics
+          - Crystallography
+          - VASP
+          - ASE (Atomic Simulation Environment)
+          - Frontier AI Safety
+          - Scientific AI Verification
+          - Real-time Game AI
+          - Physics Simulation
+          - Computational Chemistry
+          - Low-level Systems (6502 Assembly, C++/CLI)
+
+      - label: Game Development
+        keywords:
+          - Unreal
+          - Unity
+          - Frostbite
+          - Perforce
+
+
+    # ---- Interests: hobbies and out-of-work pursuits ----
+    Interests:
+
+      - name: Creative Pursuits
+        keywords:
+          - Tabletop RPG design and community coordination
+          - Vocal performance (classical and extended techniques)
+          - Retro game development (6502 assembly for NES)
+
+      - name: Philosophy & Ethics
+        keywords:
+          - Philosophy of technology
+          - Applied ethics and moral philosophy
+          - History of ideas
+
+      - name: Quantitative Hobbies
+        keywords:
+          - Market microstructure
+          - Network dynamics
+          - Complex systems modeling
