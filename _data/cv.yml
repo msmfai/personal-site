@@ -4,7 +4,7 @@ cv:
   location: Liverpool, UK
   image: ""
   summary: >-
-    I design and build machine learning systems that handle data without natural ordering, like graph structures, point clouds, and geometric configurations. My PhD focused on learning invariant representations of physical systems where no canonical ordering exists, which involved scaling training across HPC clusters using custom CUDA kernels. I now work at Electronic Arts SEED on real-time generative AI that has to run within strict frame-time budgets, where I've achieved meaningful memory and compute reductions against deployed baselines. I also advise frontier AI labs on how to evaluate scientific reasoning in their models, which matters most when ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. My background is in computational physics and representation learning, and my systems work covers CUDA, distributed HPC, and production deployment. I'm drawn to problems where correctness is hard to verify and where ideas from one field can unlock advances in another.
+    I design and build machine learning systems for geometrically structured data such as graphs, point clouds, and atomic configurations, where the underlying symmetries actually matter. My PhD focused on symmetry-aware geometric deep learning, building invariant representations of physical systems and scaling the training across HPC clusters using custom CUDA kernels. I now work at Electronic Arts SEED on real-time generative AI that has to run within strict frame-time budgets, where I've achieved meaningful memory and compute reductions against deployed baselines. I also advise frontier AI labs on how to evaluate scientific reasoning in their models, which matters most when ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. My background is in computational physics and representation learning, and my systems work covers CUDA, distributed HPC, and production deployment. I'm drawn to problems where correctness is hard to verify and where ideas from one field can unlock advances in another.
 
   social_networks:
     - network: LinkedIn
@@ -21,7 +21,7 @@ cv:
         end_date: present
         summary: Real-time generative AI and LLM research for AAA games
         highlights:
-          - Designed neural network architectures for real-time generative systems operating under production frame-time budgets, with substantial reductions in memory, register pressure, and ALU cost against deployed baselines and no loss of output quality
+          - Designed novel neural network architectures for real-time generative systems operating under production frame-time budgets, with substantial reductions in memory, register pressure, and ALU cost against deployed baselines and no loss of output quality
           - Technical lead for LLM integration in real-time interactive systems, driving architecture design, fine-tuning methodology, and evaluation framework design across research and production teams
           - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to working prototype
           - Solved a 50 year old problem in sparse rendering by bringing over machinery from the physics of glass (SIGGRAPH ASIA 2026)
@@ -42,7 +42,7 @@ cv:
         location: Liverpool, UK
         start_date: 2019-10
         end_date: 2024-10
-        summary: Architectures and representation learning for physical systems with no canonical ordering
+        summary: Symmetry-aware geometric deep learning for physical systems
         highlights:
           - Designed Site-Net (Digital Discovery, 2023), a transformer architecture for learning invariant representations of crystal structures where the input is an infinite periodic graph with no canonical ordering. Combined global self-attention over real-space supercells with explicit symmetry-aware constraints to capture long-range interactions
           - Established Deep InfoMax, which maximizes mutual information between local and global representations, as an effective self-supervised methodology for domains where reconstruction-based approaches are intractable (Digital Discovery, 2025)
