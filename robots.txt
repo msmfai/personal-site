@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://marinmoran.xyz/sitemap.xml
