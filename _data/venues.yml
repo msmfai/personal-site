@@ -18,19 +18,24 @@
 
 "Digit. Discov.":
   url: https://pubs.rsc.org/en/journals/journalissues/dd
-  color: "#17a2b8"  # Teal - represents discovery/innovation
+  color: "#17a2b8" # Teal - represents discovery/innovation
 
 "npj Comput. Mater.":
   url: https://www.nature.com/npjcompumats/
-  color: "#0066cc"  # Deep blue - Nature portfolio, computational science
+  color: "#0066cc" # Deep blue - Nature portfolio, computational science
 
 "Angew. Chem.":
   url: https://onlinelibrary.wiley.com/journal/15213773
-  color: "#8b1538"  # Wine/burgundy - prestigious chemistry journal
+  color: "#8b1538" # Wine/burgundy - prestigious chemistry journal
 
 "PhD Thesis":
-  color: "#6f42c1"      # Purple - academic distinction
+  color: "#6f42c1" # Purple - academic distinction
   text_color: "#ffffff" # White text for contrast
+
+"SIGGRAPH Asia 2026":
+  url: https://asia.siggraph.org/2026/submissions/technical-papers/
+  color: "#c23b22"
+  text_color: "#ffffff"
 
 # ==================== EXAMPLE JOURNALS (template examples) ====================
 

@@ -2,6 +2,11 @@
 # Each entry can have an optional icon (image path) or emoji (single character/emoji)
 # If neither is specified, a default marker will be used
 
+- date: "July 2026"
+  emoji: "📄"
+  content: |
+    **Stealthy Blue Noise**, with William Donnelly and Alan Wolfe, conditionally accepted as a Journal Paper at SIGGRAPH Asia 2026. We use disordered ground states of stealthy potentials to generate blue noise that reaches the spectral-gap limit, and extend the approach to multi-class, manifold, reprojective, and spatially varying settings.
+
 - date: "January 2026"
   icon: "user_assets/SMF-Logo.png"
   content: |
@@ -56,7 +61,7 @@
 - date: "September 2023"
   icon: "user_assets/SEED LOGO.png"
   content: |
-    Interned at Electronic Arts Frostbite. Reduced engine memory usage by 50% (~5GB) through C++ template metaprogramming, built a GPT-3.5 powered automated refactoring pipeline with neuro-symbolic fuzzy regex matching that shipped to production, and designed a real-time cloth fold simulation system based on recent academic literature.
+    Interned at Electronic Arts Frostbite. Reduced the memory usage of a major internal development tool by 50% (~5GB) through C++ template metaprogramming, built a GPT-3.5 powered automated refactoring pipeline with neuro-symbolic fuzzy regex matching that shipped to production, and designed a real-time cloth fold simulation system based on recent academic literature.
 
 - date: "July 2021"
   emoji: "📄"

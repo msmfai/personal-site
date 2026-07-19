@@ -18,13 +18,11 @@
 #   * Dates use YYYY-MM (e.g. 2024-10) or the word `present`.
 # =============================================================================
 
-
 # -----------------------------------------------------------------------------
 # Homepage (/)
 # -----------------------------------------------------------------------------
 
 about:
-
   # Tagline shown under the page title on the homepage. One line.
   subtitle: AI, physics, and rendering research scientist
 
@@ -43,13 +41,11 @@ about:
   solomonoff: |
     Through **Solomonoff Consultancy**, I primarily design and create evaluation frameworks for scientific reasoning in frontier AI models. The hard question is what good evaluation looks like when correctness can't be reduced to a unit test. Did the model actually learn to do physics, or did it just memorize the answer path? Open to select engagements, so get in touch if it sounds like a fit.
 
-
 # -----------------------------------------------------------------------------
 # CV page (/cv/)
 # -----------------------------------------------------------------------------
 
 cv:
-
   # ---- Identity (top of the CV) ----
   name: Dr. Marin Moran
   label: AI Research Leader & Technical Architect
@@ -67,13 +63,10 @@ cv:
     - network: GitHub
       username: msmfai
 
-
   # ---- CV sections, in render order ----
   sections:
-
     # ---- Experience: most recent first ----
     Experience:
-
       - company: Electronic Arts (SEED)
         position: AI, Physics, and Rendering Research Scientist
         location: Remote, Global
@@ -84,7 +77,7 @@ cv:
           - Designed novel neural network architectures for real-time generative systems operating under production frame-time budgets, with substantial reductions in memory, register pressure, and ALU cost against deployed baselines and no loss of output quality
           - Served as technical lead for LLM integration in real-time interactive systems, driving architecture design, fine-tuning methodology, and evaluation framework design across research and production teams
           - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to working prototype
-          - Solved a 50 year old problem in sparse rendering by bringing over machinery from the physics of glass (SIGGRAPH ASIA 2026)
+          - Solved a 50-year-old problem in sparse rendering by adapting machinery from the physics of glass; the resulting paper, Stealthy Blue Noise, was conditionally accepted to the SIGGRAPH Asia 2026 Journal Track
 
       - company: Solomonoff Consultancy
         position: Founder & Principal Consultant
@@ -116,14 +109,12 @@ cv:
         end_date: 2024-03
         summary: Memory optimization and legacy code modernization for physics systems
         highlights:
-          - Achieved significant memory optimizations through core data architecture redesign, reducing memory requirements by approximately 50% for typical workloads
+          - Redesigned the core data architecture of a major internal Frostbite development tool, reducing its memory requirements by approximately 50% (~5GB) in typical workloads
           - Built an in-engine documentation interface that surfaced the physics system's internals to non-specialist developers across the studio
           - Designed and shipped a production agentic system on GPT-3 for legacy codebase modernization, combining LLM-driven refactoring with symbolic verification to keep changes safe under deployment
 
-
     # ---- Education ----
     Education:
-
       - institution: University of Liverpool
         location: Liverpool, UK
         url: https://www.liverpool.ac.uk/
@@ -145,10 +136,8 @@ cv:
           - First Class Honours
           - Focus on computational physics and machine learning applications
 
-
     # ---- Skills: each block has a label and a list of keywords ----
     Skills:
-
       - label: Languages & Frameworks
         keywords:
           - Python
@@ -226,10 +215,8 @@ cv:
           - Frostbite
           - Perforce
 
-
     # ---- Interests: hobbies and out-of-work pursuits ----
     Interests:
-
       - name: Creative Pursuits
         keywords:
           - Tabletop RPG design and community coordination
