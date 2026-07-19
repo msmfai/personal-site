@@ -77,7 +77,7 @@ cv:
           - Designed novel neural network architectures for real-time generative systems operating under production frame-time budgets, with substantial reductions in memory, register pressure, and ALU cost against deployed baselines and no loss of output quality
           - Served as technical lead for LLM integration in real-time interactive systems, driving architecture design, fine-tuning methodology, and evaluation framework design across research and production teams
           - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to working prototype
-          - Solved a 50-year-old problem in sparse rendering by adapting machinery from the physics of glass; the resulting paper, Stealthy Blue Noise, was conditionally accepted to the SIGGRAPH Asia 2026 Journal Track
+          - Solved a 50-year-old problem in sparse rendering by adapting machinery from the physics of glass; the resulting paper, Stealthy Blue Noise, was conditionally accepted to the SIGGRAPH Asia 2026 Journal Track for publication in ACM Transactions on Graphics, pending final approval
 
       - company: Solomonoff Consultancy
         position: Founder & Principal Consultant

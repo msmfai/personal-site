@@ -5,7 +5,7 @@
 - date: "July 2026"
   emoji: "📄"
   content: |
-    **Stealthy Blue Noise**, with William Donnelly and Alan Wolfe, conditionally accepted as a Journal Paper at SIGGRAPH Asia 2026. We use disordered ground states of stealthy potentials to generate blue noise that reaches the spectral-gap limit, and extend the approach to multi-class, manifold, reprojective, and spatially varying settings.
+    **Stealthy Blue Noise**, with William Donnelly and Alan Wolfe. Conditionally accepted to the SIGGRAPH Asia 2026 Journal Track for publication in ACM Transactions on Graphics, pending final approval. We use disordered ground states of stealthy potentials to generate blue noise that reaches the spectral-gap limit, and extend the approach to multi-class, manifold, reprojective, and spatially varying settings.
 
 - date: "January 2026"
   icon: "user_assets/SMF-Logo.png"
