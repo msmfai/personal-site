@@ -32,7 +32,7 @@
   color: "#6f42c1" # Purple - academic distinction
   text_color: "#ffffff" # White text for contrast
 
-"SIGGRAPH Asia 2026":
+"SIGGRAPH":
   url: https://asia.siggraph.org/2026/submissions/technical-papers/
   color: "#c23b22"
   text_color: "#ffffff"
