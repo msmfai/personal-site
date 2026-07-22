@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-side-projects",
+          title: "Side Projects",
+          description: "Experiments in agentic coding and evidence-driven software development.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/side-projects/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "",
