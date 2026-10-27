@@ -103,6 +103,8 @@ def format_month_year(value) -> str:
     if hasattr(value, "strftime"):
         return value.strftime("%b %Y")
     s = str(value).strip()
+    if re.fullmatch(r"\d{4}", s):
+        return s  # year only (a version may date an entry to the year)
     parts = s.split("-")
     try:
         year = int(parts[0])
@@ -234,78 +236,90 @@ def render_markdown(content: dict, preset: dict) -> str:
 
     sections = cv.get("sections", {}) or {}
 
-    # ---- Experience ----
-    if "Experience" in sections:
-        lines.append("# Experience")
-        lines.append("")
-        for entry in sections["Experience"]:
-            company = entry.get("company", "")
-            position = entry.get("position", "")
-            loc = entry.get("location", "")
-            dates = date_range(entry.get("start_date"), entry.get("end_date"))
-            summary_line = (entry.get("summary") or "").strip()
+    for name in sections:
 
-            lines.append(
-                f"\\textbf{{{tex_escape(company)}}}, *{position}* "
-                f"\\hfill {dates} \\\n"
-            )
-            if loc:
-                lines.append(f"\\textit{{\\small {tex_escape(loc)}}}\\")
+        # ---- Experience ----
+        if name == "Experience":
+            lines.append("# Experience")
+            lines.append("")
+            for entry in sections["Experience"]:
+                company = entry.get("company", "")
+                position = entry.get("position", "")
+                loc = entry.get("location", "")
+                dates = date_range(entry.get("start_date"), entry.get("end_date"))
+                summary_line = (entry.get("summary") or "").strip()
+
+                block = [f"\\textbf{{{tex_escape(company)}}}, *{position}*"]
+                block.append(f"\\textit{{\\small {tex_escape(loc)}}} \\hfill {dates}" if loc else f"\\hfill {dates}")
+                if summary_line:
+                    block.append(f"*{summary_line}*")
+                # A trailing backslash is Pandoc's hard line break: one paragraph, no parskip gaps.
+                lines.append(" \\\n".join(block))
                 lines.append("")
-            if summary_line:
-                lines.append(f"*{summary_line}*")
+                for h in entry.get("highlights", []) or []:
+                    lines.append(f"- {h}")
                 lines.append("")
-            for h in entry.get("highlights", []) or []:
-                lines.append(f"- {h}")
+
+        # ---- Education ----
+        if name == "Education":
+            lines.append("# Education")
             lines.append("")
+            for entry in sections["Education"]:
+                institution = entry.get("institution", "")
+                area = entry.get("area", "")
+                study_type = entry.get("studyType", "")
+                loc = entry.get("location", "")
+                dates = date_range(entry.get("start_date"), entry.get("end_date"))
 
-    # ---- Education ----
-    if "Education" in sections:
-        lines.append("# Education")
-        lines.append("")
-        for entry in sections["Education"]:
-            institution = entry.get("institution", "")
-            area = entry.get("area", "")
-            study_type = entry.get("studyType", "")
-            loc = entry.get("location", "")
-            dates = date_range(entry.get("start_date"), entry.get("end_date"))
+                descriptor = ", ".join(p for p in [study_type, area] if p)
 
-            descriptor = ", ".join(p for p in [study_type, area] if p)
-
-            lines.append(
-                f"\\textbf{{{tex_escape(institution)}}}, *{descriptor}* "
-                f"\\hfill {dates} \\\n"
-            )
-            if loc:
-                lines.append(f"\\textit{{\\small {tex_escape(loc)}}}\\")
+                block = [f"\\textbf{{{tex_escape(institution)}}}, *{descriptor}*"]
+                block.append(f"\\textit{{\\small {tex_escape(loc)}}} \\hfill {dates}" if loc else f"\\hfill {dates}")
+                lines.append(" \\\n".join(block))
                 lines.append("")
-            for h in entry.get("highlights", []) or []:
-                lines.append(f"- {h}")
+                for h in entry.get("highlights", []) or []:
+                    lines.append(f"- {h}")
+                lines.append("")
+
+        # ---- Publications ----
+        if name == "Publications":
+            lines.append("# Publications")
+            lines.append("")
+            for pub in sections["Publications"]:
+                title = pub.get("title", "")
+                authors = pub.get("summary") or pub.get("authors", "")
+                venue = pub.get("publisher") or pub.get("venue", "")
+                bits = [f"**{title}**."]
+                if authors:
+                    bits.append(authors if authors.endswith(".") else f"{authors}.")
+                if venue:
+                    bits.append(f"*{venue}*.")
+                lines.append("- " + " ".join(bits))
             lines.append("")
 
-    # ---- Skills ----
-    if "Skills" in sections:
-        lines.append("# Skills")
-        lines.append("")
-        for group in sections["Skills"]:
-            label_g = group.get("label", "")
-            keywords = group.get("keywords", []) or []
-            if not keywords:
-                continue
-            lines.append(f"**{label_g}.** {', '.join(keywords)}")
+        # ---- Skills ----
+        if name == "Skills":
+            lines.append("# Skills")
             lines.append("")
+            for group in sections["Skills"]:
+                label_g = group.get("label", "")
+                keywords = group.get("keywords", []) or []
+                if not keywords:
+                    continue
+                lines.append(f"**{label_g}.** {', '.join(keywords)}")
+                lines.append("")
 
-    # ---- Interests ----
-    if "Interests" in sections:
-        lines.append("# Interests")
-        lines.append("")
-        for group in sections["Interests"]:
-            name_g = group.get("name", "")
-            keywords = group.get("keywords", []) or []
-            if not keywords:
-                continue
-            lines.append(f"**{name_g}.** {', '.join(keywords)}")
+        # ---- Interests ----
+        if name == "Interests":
+            lines.append("# Interests")
             lines.append("")
+            for group in sections["Interests"]:
+                name_g = group.get("name", "")
+                keywords = group.get("keywords", []) or []
+                if not keywords:
+                    continue
+                lines.append(f"**{name_g}.** {', '.join(keywords)}")
+                lines.append("")
 
     return "\n".join(lines)
 
@@ -420,6 +434,11 @@ def parse_args() -> argparse.Namespace:
         help=f"Skip auto-tuning and use the '{DEFAULT_PRESET_NAME}' preset.",
     )
     p.add_argument(
+        "--variant", type=Path, action="append", default=[],
+        help="resume version spec (YAML overlay, kept outside this repo). Repeatable. "
+             "Output goes to build/resume/variants/, never assets/.",
+    )
+    p.add_argument(
         "--list-presets", action="store_true",
         help="Print the available presets and exit.",
     )
@@ -452,6 +471,28 @@ def main() -> None:
 
     with CONTENT_FILE.open("r", encoding="utf-8") as f:
         content = yaml.safe_load(f)
+
+    if args.variant:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from resume_variants import VariantError, apply, load_spec, variant_name
+        for vpath in args.variant:
+            try:
+                spec = load_spec(vpath)
+                vcontent = apply(content, spec)
+            except VariantError as e:
+                sys.exit(f"ERROR in {vpath}: {e}")
+            name = variant_name(spec)
+            vdir = BUILD_DIR / "variants"
+            vdir.mkdir(parents=True, exist_ok=True)
+            (vdir / f"{name}.content.yml").write_text(yaml.safe_dump(vcontent, sort_keys=False, allow_unicode=True, width=10_000), encoding="utf-8")
+            md_path, pdf_out, docx_out = vdir / f"{name}.md", vdir / f"{name}.pdf", vdir / f"{name}.docx"
+            chosen = find_preset_by_name(args.preset) if args.preset else auto_tune(vcontent, args.target_pages, md_path, pdf_out)
+            if args.preset:
+                md_path.write_text(render_markdown(vcontent, chosen), encoding="utf-8")
+                build_pdf(md_path, pdf_out)
+            build_docx(md_path, docx_out)
+            print(f"[{name}] {pdf_out.relative_to(ROOT)}: {count_pdf_pages(pdf_out)} page(s), preset {chosen['name']}")
+        return
 
     BUILD_DIR.mkdir(parents=True, exist_ok=True)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
