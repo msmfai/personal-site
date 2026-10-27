@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Dr. Marin Moran - AI, Physics, and Rendering # the website title (if blank, full name will be used instead)
+title: Marin Moran | AI, Physics, and Rendering # the website title (if blank, full name will be used instead)
 first_name: Marin
 middle_name:
 last_name: Moran
@@ -12,7 +12,7 @@ contact_note:
 # Set to true to show consultancy mentions, false to hide them
 show_consultancy: false
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Academic website for Dr. Marin Moran, AI Research Scientist.
+  Research scientist working on real-time generative AI, geometric deep learning, and scientific machine learning.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -303,7 +303,7 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: year
+  group_by: none
   group_order: descending
 
 # Display different badges withs stats for your publications

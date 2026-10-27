@@ -8,7 +8,7 @@ nav_order: 6
 ---
 
 <div class="contact-form">
-  <p>Feel free to reach out via the form below or connect with me on <a href="https://linkedin.com/in/marin-moran">LinkedIn</a> or <a href="https://github.com/msmfai">GitHub</a>.</p>
+  <p>For research collaborations, technical discussions, and speaking enquiries, use the form below. You can also find me on <a href="https://linkedin.com/in/marin-moran">LinkedIn</a> and <a href="https://github.com/msmfai">GitHub</a>.</p>
 
   <form action="https://formspree.io/f/maqpnoed" method="POST">
     <div class="form-group">

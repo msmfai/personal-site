@@ -5,7 +5,7 @@
 - date: "July 2026"
   emoji: "📄"
   content: |
-    **Stealthy Blue Noise**, with William Donnelly and Alan Wolfe. Conditionally accepted to the SIGGRAPH Asia 2026 Journal Track for publication in ACM Transactions on Graphics, pending final approval. We use disordered ground states of stealthy potentials to generate blue noise that reaches the spectral-gap limit, and extend the approach to multi-class, manifold, reprojective, and spatially varying settings.
+    **Stealthy Blue Noise**, with William Donnelly and Alan Wolfe, was accepted to the SIGGRAPH Asia 2026 Journal Track for publication in ACM Transactions on Graphics. It derives blue-noise constructions from disordered ground states and extends them to multi-class, manifold, reprojective, and spatially varying settings.
 
 - date: "January 2026"
   icon: "user_assets/SMF-Logo.png"
@@ -35,7 +35,7 @@
 - date: "September 2024"
   emoji: "🎓"
   content: |
-    Completed PhD at University of Liverpool. Thesis: [*An information oriented approach to materials informatics*](https://livrepository.liverpool.ac.uk/3193136/). Published 4 papers in top-tier journals including Digital Discovery, npj Computational Materials, and Angewandte Chemie.
+    Completed a PhD at the University of Liverpool. The thesis, [*An information oriented approach to materials informatics*](https://livrepository.liverpool.ac.uk/3193136/), developed representation-learning methods for crystal structures. The work resulted in four papers across Digital Discovery, npj Computational Materials, and Angewandte Chemie. **LLMs Show No Signs of Individuated Metacognition**, with Mark E. Whiting, was later accepted at NeurIPS.
 
 - date: "February 2024"
   icon: "user_assets/SMF-Logo.png"
@@ -51,12 +51,12 @@
 - date: "January 2023"
   emoji: "📄"
   content: |
-    **A database of experimentally measured lithium solid electrolyte conductivities evaluated with machine learning** published in npj Computational Materials. We assembled an expert-curated dataset of 820 lithium ion conductors from 214 sources, measured by a.c. impedance spectroscopy across 5-873°C. The dataset was evaluated with a CrabNet classifier to predict high versus low conductivity from composition alone, democratizing access to battery materials data.
+    **A database of experimentally measured lithium solid electrolyte conductivities evaluated with machine learning** published in npj Computational Materials. We assembled an expert-curated dataset of 820 lithium ion conductors from 214 sources, measured by a.c. impedance spectroscopy across 5-873°C. The dataset was evaluated with a CrabNet classifier to predict high versus low conductivity from composition alone and released as a resource for battery-materials research.
 
 - date: "September 2023"
   emoji: "📄"
   content: |
-    **The Liverpool materials discovery server: a suite of computational tools for the collaborative discovery of materials** published in Digital Discovery. We built a web platform hosting six state-of-the-art computational tools at lmds.liverpool.ac.uk, enabling experimental chemists to run materials discovery workflows without computational expertise. The entire stack was open-sourced with API and setup scripts for reproducibility.
+    **The Liverpool materials discovery server: a suite of computational tools for the collaborative discovery of materials** published in Digital Discovery. We built a web platform hosting six computational tools at lmds.liverpool.ac.uk, enabling experimental chemists to run materials-discovery workflows without computational expertise. The stack was released with an API and setup scripts for reproducibility.
 
 - date: "September 2023"
   icon: "user_assets/SEED LOGO.png"

@@ -24,15 +24,15 @@
 
 about:
   # Tagline shown under the page title on the homepage. One line.
-  subtitle: AI, physics, and rendering research scientist
+  subtitle: Research scientist working across AI, physics, and rendering
 
   # First paragraph of the homepage bio. Short opener.
   intro: |
-    I'm Marin. I do AI research, mostly at the intersection of fields that don't usually talk to each other.
+    I'm Marin Moran, a research scientist at Electronic Arts SEED. My work spans real-time generative systems, geometric deep learning, and scientific AI.
 
   # Second paragraph. Electronic Arts SEED stream.
   ea_seed: |
-    At **Electronic Arts SEED**, I work on real-time generative AI for AAA games. Fitting neural networks into a shipping game engine's frame-time budget involves as much low level optimisation work as research, where finding structure in the problem to achieve real time results is essential. Intersecting the technical with the creative, I ask what novel experiences can we create with AI that were not possible before?
+    At **Electronic Arts SEED**, I develop generative systems for AAA games under the memory, latency, and integration constraints of a shipping engine. The work sits between research and systems engineering, with an emphasis on ideas that change what can be built in real time.
 
   # Third paragraph. Solomonoff Consultancy stream.
   # Note: this paragraph is wrapped on the page in {% if site.show_consultancy %}
@@ -48,13 +48,13 @@ about:
 cv:
   # ---- Identity (top of the CV) ----
   name: Dr. Marin Moran
-  label: AI Research Leader & Technical Architect
+  label: Research Scientist in AI, Physics, and Rendering
   location: Liverpool, UK
   image: ""
 
   # ---- Professional summary paragraph (top of the CV) ----
   summary: |
-    I design and build machine learning systems for geometrically structured data such as graphs, point clouds, and atomic configurations, where the underlying symmetries are key to reliable neural systems. My PhD focused on symmetry-aware geometric deep learning, building invariant representations of physical systems and scaling the training across HPC clusters using custom CUDA kernels. I now work at Electronic Arts SEED on real-time generative AI that has to run within strict frame-time budgets, alongside combining my technical expertise with creative vision to pioneer new experiences. I also advise frontier AI labs on how to evaluate scientific reasoning in their models, which matters most when ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. I'm drawn to problems where correctness is hard to verify and where ideas from one field can unlock advances in another.
+    I take methods from the physics of structured and disordered systems into machine learning and rendering, and I build instruments to measure what learned models actually know. That thread runs from symmetry-aware networks for crystal structures in my PhD, through a NeurIPS study finding no evidence that LLM confidence carries model-specific self-knowledge, to Stealthy Blue Noise in ACM Transactions on Graphics. At Electronic Arts SEED, I develop real-time generative AI for AAA games; I also design evaluation frameworks for scientific reasoning in frontier models.
 
   # ---- Social profiles linked at the bottom of the CV ----
   social_networks:
@@ -74,21 +74,21 @@ cv:
         end_date: present
         summary: Real-time generative AI and LLM research for AAA games
         highlights:
-          - Designed novel neural network architectures for real-time generative systems operating under production frame-time budgets, with substantial reductions in memory, register pressure, and ALU cost against deployed baselines and no loss of output quality
-          - Served as technical lead for LLM integration in real-time interactive systems, driving architecture design, fine-tuning methodology, and evaluation framework design across research and production teams
-          - Led cross-functional research into LLM-powered experiences that could not have existed before, with full ownership from conceptualization to working prototype
-          - Solved a 50-year-old problem in sparse rendering by adapting machinery from the physics of glass; the resulting paper, Stealthy Blue Noise, was conditionally accepted to the SIGGRAPH Asia 2026 Journal Track for publication in ACM Transactions on Graphics, pending final approval
+          - Designed neural architectures for real-time generative systems under production frame-time constraints, reducing memory use, register pressure, and ALU cost relative to deployed baselines without loss of output quality
+          - Technical lead for LLM integration in real-time interactive systems, spanning architecture, fine-tuning, evaluation, and production integration
+          - Led cross-functional research on LLM-driven interactive experiences from concept through working prototype
+          - Conceived and led Stealthy Blue Noise, a spectral construction for sparse rendering adapted from the physics of disordered systems, accepted to SIGGRAPH for publication in ACM Transactions on Graphics
 
       - company: Solomonoff Consultancy
         position: Founder & Principal Consultant
         location: Remote
         start_date: 2024-02
         end_date: present
-        summary: Boutique consultancy designing verification and evaluation frameworks for scientific reasoning in frontier AI systems
+        summary: Evaluation and verification for scientific reasoning in frontier AI systems
         highlights:
-          - Designed verification frameworks for scientific domains where ground truth is expensive to obtain and binary correctness fails to capture what good reasoning looks like. Advised on and implemented benchmarks that test whether models have learned to do science rather than memorize it
-          - Led the design and delivery of PhD-level verification datasets for frontier AI models, coordinating 100+ domain experts across physics, chemistry, and drug discovery, and personally authoring a substantial volume of expert-level challenges. These datasets now power frontier model capabilities
-          - Provided strategic guidance on AI alignment and responsible deployment to frontier AI organizations, translating philosophical and technical safety literature into actionable frameworks for production systems
+          - Designed scientific-reasoning benchmarks for domains where ground truth is costly and binary correctness is insufficient
+          - Led the delivery of PhD-level evaluation datasets across physics, chemistry, and drug discovery, coordinating more than 100 domain experts
+          - Advised on alignment and deployment questions at the boundary of technical evaluation and responsible use
 
       - company: University of Liverpool, Materials Innovation Factory
         position: Post-Graduate Machine Learning Researcher
@@ -97,7 +97,7 @@ cv:
         end_date: 2024-10
         summary: Symmetry-aware geometric deep learning for physical systems
         highlights:
-          - Designed Site-Net (Digital Discovery, 2023), a transformer architecture for learning invariant representations of crystal structures where the input is an infinite periodic graph with no canonical ordering. Combined global self-attention over real-space supercells with explicit symmetry-aware constraints to capture long-range interactions
+          - Designed Site-Net (Digital Discovery, 2023), a transformer that learns invariant representations of crystal structures, infinite periodic graphs with no canonical ordering, using global self-attention over real-space supercells to capture long-range interactions
           - Established Deep InfoMax, which maximizes mutual information between local and global representations, as an effective self-supervised methodology for domains where reconstruction-based approaches are intractable (Digital Discovery, 2025)
           - Scaled training across SLURM clusters using DeepSpeed, custom CUDA kernels, and symmetry-aware optimizations via PyTorch Geometric, and built bespoke data architectures for high-throughput multi-GPU pipelines
           - Co-built a locally hosted cloud service for deploying supervised materials-informatics models, used by the Materials Innovation Factory research group
@@ -109,7 +109,7 @@ cv:
         end_date: 2024-03
         summary: Memory optimization and legacy code modernization for physics systems
         highlights:
-          - Redesigned the core data architecture of a major internal Frostbite development tool, reducing its memory requirements by approximately 50% (~5GB) in typical workloads
+          - Redesigned the core data architecture of a major internal Frostbite development tool, halving its memory footprint in typical workloads (~5 GB saved)
           - Built an in-engine documentation interface that surfaced the physics system's internals to non-specialist developers across the studio
           - Designed and shipped a production agentic system on GPT-3 for legacy codebase modernization, combining LLM-driven refactoring with symbolic verification to keep changes safe under deployment
 
@@ -124,7 +124,7 @@ cv:
         end_date: 2024-09
         highlights:
           - "Doctoral thesis, [An information oriented approach to materials informatics](https://livrepository.liverpool.ac.uk/3193136/)"
-          - Published 4 papers in top-tier journals (Digital Discovery, npj Computational Materials, Angewandte Chemie)
+          - "Conceived and led LLMs Show No Signs of Individuated Metacognition (NeurIPS), with Mark E. Whiting"
 
       - institution: University of Liverpool
         location: Liverpool, UK
@@ -135,6 +135,30 @@ cv:
         highlights:
           - First Class Honours
           - Focus on computational physics and machine learning applications
+
+    # ---- Publications: title, summary (author list), publisher (venue). Bold your own name with ** **. ----
+    Publications:
+      - title: Stealthy Blue Noise
+        summary: "**M. Moran**, W. Donnelly, A. Wolfe"
+        publisher: ACM Transactions on Graphics (SIGGRAPH)
+      - title: Establishing Deep InfoMax as an effective self-supervised learning methodology in materials informatics
+        summary: "**M. Moran**, M. W. Gaultois, V. V. Gusev, D. Antypov, M. J. Rosseinsky"
+        publisher: Digital Discovery
+      - title: LLMs Show No Signs of Individuated Metacognition
+        summary: "**M. Moran**, M. E. Whiting"
+        publisher: NeurIPS
+      - title: "Site-Net: using global self-attention and real-space supercells to capture long-range interactions in crystal structures"
+        summary: "**M. Moran**, M. W. Gaultois, V. V. Gusev, D. Antypov, M. J. Rosseinsky"
+        publisher: Digital Discovery
+      - title: A database of experimentally measured lithium solid electrolyte conductivities evaluated with machine learning
+        summary: "C. J. Hargreaves, M. W. Gaultois, L. M. Daniels, E. J. Watts, V. A. Kurlin, **M. Moran**, et al."
+        publisher: npj Computational Materials
+      - title: "The Liverpool materials discovery server: a suite of computational tools for the collaborative discovery of materials"
+        summary: "S. Durdy, C. J. Hargreaves, M. Dennison, B. Wagg, **M. Moran**, J. A. Newnham, M. W. Gaultois, M. J. Rosseinsky, M. S. Dyer"
+        publisher: Digital Discovery
+      - title: Discovery of a Low Thermal Conductivity Oxide Guided by Probe Structure Prediction and Machine Learning
+        summary: "C. M. Collins, L. M. Daniels, Q. Gibson, M. W. Gaultois, **M. Moran**, et al."
+        publisher: Angewandte Chemie International Edition
 
     # ---- Skills: each block has a label and a list of keywords ----
     Skills:
