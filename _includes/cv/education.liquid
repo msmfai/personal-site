@@ -80,6 +80,7 @@
                 </li>
               {% endfor %}
               {% for item in entry.highlights %}
+                {% if site.show_neurips_paper != true and item contains 'Individuated Metacognition' %}{% continue %}{% endif %}
                 <li>
                   <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
                 </li>

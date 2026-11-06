@@ -4,6 +4,7 @@
 
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for entry in entries %}
+    {% if site.show_neurips_paper != true and entry.title contains 'Individuated Metacognition' %}{% continue %}{% endif %}
     <li class="list-group-item">
       <div class="row">
         {% capture pub_date %}

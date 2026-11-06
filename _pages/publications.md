@@ -15,7 +15,7 @@ nav_order: 2
 
 <div class="publications">
 
-{% bibliography %}
+{% if site.show_neurips_paper %}{% bibliography %}{% else %}{% bibliography --query @*[key!=MoranMetacognition] %}{% endif %}
 
 </div>
 

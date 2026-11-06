@@ -36,6 +36,8 @@
   emoji: "🎓"
   content: |
     Completed a PhD at the University of Liverpool. The thesis, [*An information oriented approach to materials informatics*](https://livrepository.liverpool.ac.uk/3193136/), developed representation-learning methods for crystal structures. The work resulted in four papers across Digital Discovery, npj Computational Materials, and Angewandte Chemie. **LLMs Show No Signs of Individuated Metacognition**, with Mark E. Whiting, was later accepted at NeurIPS.
+  content_without_neurips: |
+    Completed a PhD at the University of Liverpool. The thesis, [*An information oriented approach to materials informatics*](https://livrepository.liverpool.ac.uk/3193136/), developed representation-learning methods for crystal structures. The work resulted in four papers across Digital Discovery, npj Computational Materials, and Angewandte Chemie.
 
 - date: "February 2024"
   icon: "user_assets/SMF-Logo.png"

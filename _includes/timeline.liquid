@@ -31,7 +31,11 @@
           {% endif %}
           <div class="timeline-content">
             <div class="timeline-date">{{ entry.date }}</div>
-            <div class="timeline-text">{{ entry.content | markdownify }}</div>
+            {% assign entry_text = entry.content %}
+            {% if site.show_neurips_paper != true and entry.content_without_neurips %}
+              {% assign entry_text = entry.content_without_neurips %}
+            {% endif %}
+            <div class="timeline-text">{{ entry_text | markdownify }}</div>
           </div>
         </div>
         {% if entry.supplementary %}

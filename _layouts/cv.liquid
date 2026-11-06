@@ -140,10 +140,14 @@ layout: default
         {% endif %}
 
         <!-- Summary -->
-        {% if cv.summary %}
+        {% assign cv_summary = cv.summary %}
+        {% if site.show_neurips_paper != true and cv.summary_without_neurips %}
+          {% assign cv_summary = cv.summary_without_neurips %}
+        {% endif %}
+        {% if cv_summary %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Professional Summary</h3>
-            <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            <p>{{ cv_summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           </div>
         {% endif %}
 

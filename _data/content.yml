@@ -49,12 +49,16 @@ cv:
   # ---- Identity (top of the CV) ----
   name: Dr. Marin Moran
   label: Research Scientist in AI, Physics, and Rendering
-  location: Liverpool, UK
+  location: London, UK
   image: ""
 
   # ---- Professional summary paragraph (top of the CV) ----
   summary: |
     I take methods from the physics of structured and disordered systems into machine learning and rendering, and I build instruments to measure what learned models actually know. That thread runs from symmetry-aware networks for crystal structures in my PhD, through a NeurIPS study finding no evidence that LLM confidence carries model-specific self-knowledge, to Stealthy Blue Noise in ACM Transactions on Graphics. At Electronic Arts SEED, I develop real-time generative AI for AAA games; I also design evaluation frameworks for scientific reasoning in frontier models.
+
+  # Shown instead of summary when show_neurips_paper is false (_config.yml)
+  summary_without_neurips: |
+    I take methods from the physics of structured and disordered systems into machine learning and rendering, and I build instruments to measure what learned models actually know. That thread runs from symmetry-aware networks for crystal structures in my PhD to Stealthy Blue Noise in ACM Transactions on Graphics. At Electronic Arts SEED, I develop real-time generative AI for AAA games; I also design evaluation frameworks for scientific reasoning in frontier models.
 
   # ---- Social profiles linked at the bottom of the CV ----
   social_networks:
